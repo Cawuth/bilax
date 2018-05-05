@@ -1,0 +1,9 @@
+- allinea numeri a destra delle celle
+- inserisci 0,00 al posto di 0
+- metti a destra il pulsante per aggiungere una colonna (deve funzionare anche quando le colonne riempiono lo schermo intero)
+- sostituisci punti con virgole
+- finisci di assemblare i file iniziali
+- risolvi bug
+- scomponi file iniziani in più file divisi per organizzarli meglio
+- realizzare la normalizzazione dello stato patrimoniale
+- realizzare gli indici
