@@ -7,3 +7,4 @@
 - scomponi file iniziani in più file divisi per organizzarli meglio
 - realizzare la normalizzazione dello stato patrimoniale
 - realizzare gli indici
+- prova per vedere se github worka
