@@ -8,3 +8,26 @@ SE SI HA TEMPO
 
 NOTE
 1. in tutto PA non ci sono errori di sintassi
+2. Manca calculatePP
+3. Errore RISOLTO
+
+computing.js:2367 Uncaught TypeError: Cannot read property 'value' of null
+    at calculatePPD (computing.js:2367)
+    at HTMLInputElement.onkeyup (index.html:1)
+calculatePPD	@	computing.js:2367
+onkeyup	@	index.html:1
+
+Quando si posiziona un valore in PP.D1
+
+Note: errore causato dall'assenza di PP.D10
+L'errore probabilmente è causato dal fatto che PP.D è la somma di 14 elementi, ma al posto di PP.D10 viene usato PP.A
+
+Correzioni:
+Correggo cambiando PP.D10,...,PP.D14 con PP.DA,...PP.DD in calculatePPD
+
+Altre errore:
+Notare la presenza di PP.DF tra PP.D2 e PP.D3
+
+4. Manca PP.DF nel codice
+
+Nota: fino a PP.D5b va tutto bene tranne per l'inesistenza di PP.D5
