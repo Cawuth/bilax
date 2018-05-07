@@ -754,6 +754,19 @@ function aggiungiColonna(){
     temp=document.getElementById('PP.D2b').innerHTML;
     temp=setInner(temp);
     document.getElementById('PP.D2b').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D2b-"+actualYear+"\" onkeyup=\"calculatePPD2("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
+//PP.DF
+	temp=document.getElementById('PP.DF').innerHTML;
+	temp=setInner(temp);
+	document.getElementById('PP.DF').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.DF-"+actualYear+"\" onkeyup=\"calculatePPD("+actualYear+")\"></td>";
+//PP.DFa
+	temp=document.getElementById('PP.DFa').innerHTML;
+	temp=setInner(temp);
+	document.getElementById('PP.DFa').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.DFa-"+actualYear+"\" onkeyup=\"calculatePPDF("+actualYear+")\"></td>";
+//PP.DFb
+temp=document.getElementById('PP.DFb').innerHTML;
+temp=setInner(temp);
+document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.DFb-"+actualYear+"\" onkeyup=\"calculatePPDF("+actualYear+")\"></td>";
+
 //PP.D3
     temp=document.getElementById('PP.D3').innerHTML;
     temp=setInner(temp);
