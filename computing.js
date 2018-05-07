@@ -755,6 +755,7 @@ function aggiungiColonna(){
     temp=setInner(temp);
     document.getElementById('PP.D2b').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D2b-"+actualYear+"\" onkeyup=\"calculatePPD2("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
 //PP.DF
+	console.log("ciao");
 	temp=document.getElementById('PP.DF').innerHTML;
 	temp=setInner(temp);
 	document.getElementById('PP.DF').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.DF-"+actualYear+"\" onkeyup=\"calculatePPD("+actualYear+")\"></td>";
