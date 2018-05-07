@@ -2357,6 +2357,7 @@ function calculatePPC(anno) {
 function calculatePPD(anno) {
     var PPD1String=document.getElementById('PP.D1-'+anno).value;
     var PPD2String=document.getElementById('PP.D2-'+anno).value;
+	var PPDFString=document.getElementById('PP.DF-'+anno).value;
     var PPD3String=document.getElementById('PP.D3-'+anno).value;
     var PPD4String=document.getElementById('PP.D4-'+anno).value;
     var PPD5String=document.getElementById('PP.D5-'+anno).value;
@@ -2364,13 +2365,13 @@ function calculatePPD(anno) {
     var PPD7String=document.getElementById('PP.D7-'+anno).value;
     var PPD8String=document.getElementById('PP.D8-'+anno).value;
     var PPD9String=document.getElementById('PP.D9-'+anno).value;
-    var PPD10String=document.getElementById('PP.D10-'+anno).value;
-    var PPD11String=document.getElementById('PP.D11-'+anno).value;
-    var PPD12String=document.getElementById('PP.D12-'+anno).value;
-    var PPD13String=document.getElementById('PP.D13-'+anno).value;
-    var PPD14String=document.getElementById('PP.D14-'+anno).value;
+    var PPDAString=document.getElementById('PP.DA-'+anno).value;
+    var PPDBString=document.getElementById('PP.DB-'+anno).value;
+    var PPDCString=document.getElementById('PP.DC-'+anno).value;
+    var PPDDString=document.getElementById('PP.DD-'+anno).value;
     var PPD1=parseFloat(PPD1String);
     var PPD2=parseFloat(PPD2String);
+	var PPDF=parseFloat(PPDFString);
     var PPD3=parseFloat(PPD3String);
     var PPD4=parseFloat(PPD4String);
     var PPD5=parseFloat(PPD5String);
@@ -2378,11 +2379,10 @@ function calculatePPD(anno) {
     var PPD7=parseFloat(PPD7String);
     var PPD8=parseFloat(PPD8String);
     var PPD9=parseFloat(PPD9String);
-    var PPD10=parseFloat(PPD10String);
-    var PPD11=parseFloat(PPD11String);
-    var PPD12=parseFloat(PPD12String);
-    var PPD13=parseFloat(PPD13String);
-    var PPD14=parseFloat(PPD14String);
+    var PPDA=parseFloat(PPD10String);
+    var PPDB=parseFloat(PPD11String);
+    var PPDC=parseFloat(PPD12String);
+    var PPDD=parseFloat(PPD13String);
     var somma;
     if(isNaN(PPD1)) {
         PPD1=0;
@@ -2390,6 +2390,9 @@ function calculatePPD(anno) {
     if(isNaN(PPD2)) {
         PPD2=0;
     }
+	if(isNaN(PPDF)){
+		PPDF=0;
+	}
     if(isNaN(PPD3)) {
         PPD3=0;
     }
@@ -2411,22 +2414,19 @@ function calculatePPD(anno) {
     if(isNaN(PPD9)) {
         PPD9=0;
     }
-    if(isNaN(PPD10)) {
-        PPD10=0;
+    if(isNaN(PPDA)) {
+        PPDA=0;
     }
-    if(isNaN(PPD11)) {
-        PPD11=0;
+    if(isNaN(PPDB)) {
+        PPDB=0;
     }
-    if(isNaN(PPD12)) {
-        PPD12=0;
+    if(isNaN(PPDC)) {
+        PPDC=0;
     }
-    if(isNaN(PPD13)) {
-        PPD13=0;
+    if(isNaN(PPDD)) {
+        PPDD=0;
     }
-    if(isNaN(PPD14)) {
-        PPD14=0;
-    }
-    somma=PPD1+PPD2+PPD3+PPD4+PPD5+PPD6+PPD7+PPD8+PPD9+PPD10+PPD11+PPD12+PPD13+PPD14;
+    somma=PPD1+PPD2+PPDF+PPD3+PPD4+PPD5+PPD6+PPD7+PPD8+PPD9+PPDA+PPDB+PPDC+PPDD;
     document.getElementById('PP.D-'+anno).value=somma;
 
 }
