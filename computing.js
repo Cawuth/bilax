@@ -2393,10 +2393,10 @@ function calculatePPD(anno) {
     var PPD7=parseFloat(PPD7String);
     var PPD8=parseFloat(PPD8String);
     var PPD9=parseFloat(PPD9String);
-    var PPDA=parseFloat(PPD10String);
-    var PPDB=parseFloat(PPD11String);
-    var PPDC=parseFloat(PPD12String);
-    var PPDD=parseFloat(PPD13String);
+    var PPDA=parseFloat(PPDAString);
+    var PPDB=parseFloat(PPDBString);
+    var PPDC=parseFloat(PPDCString);
+    var PPDD=parseFloat(PPDDString);
     var somma;
     if(isNaN(PPD1)) {
         PPD1=0;
