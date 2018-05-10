@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Expires" content="Fri, Jan 01 1900 00:00:00 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Lang" content="it">
+<meta name="author" content="Fabio Donatantonio">
+<meta http-equiv="Reply-to" content="@.com">
+<meta name="generator" content="PhpED 5.6">
+<meta name="description" content="number_format - Javascript">
+<meta name="keywords" content="number_format - Javascript">
+<meta name="creation-date" content="24/02/2012">
+<meta name="revisit-after" content="15 days">
+<title>number_format - Javascript</title>
+
+<style type="text/css">
+#responso{
+    font-weight:bold;
+    color:red;
+}
+</style>
+
+<script type="text/javascript" src='number_format.js'></script>
+<script type="text/javascript">
+// Funzione di test - utile per demo
+function test(val,decimali,sep_d,sep_m){
+    var formattato = number_format(val,decimali,sep_d,sep_m);
+    document.getElementById('responso').innerHTML='Valore formattato: '+formattato+'';        
+}
+</script>
+
+</head>
+<body>
+<h2>Funzione number_format - Javascript</h2>
+<h4>Sintassi <em>number_format(valore, decimali, separatore_decimali, separatore_migliaia)</em></h4>
+
+Inserisci un valore: <input type="text" name="valore" size="10" value=""/><br/>
+<br/>
+Inserisci numero di decimali: <input type="text" name="decimali" maxlength="2" size="2" value="2"/><br/>
+Inserisci separatore decimali: <input type="text" name="sep_d" maxlength="1" size="1" value=","/><br/>
+Inserisci separatore migliaia: <input type="text" name="sep_m" maxlength="1" size="1" value="."/><br/>
+<br/>
+<input type="button" value="Formatta" onclick="test(document.getElementsByName('valore')[0].value,document.getElementsByName('decimali')[0].value,document.getElementsByName('sep_d')[0].value,document.getElementsByName('sep_m')[0].value)"/>
+<div id='responso'>
+</div>
+
+<br/><br/>
+</body>
+</html>
