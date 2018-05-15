@@ -994,7 +994,7 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     //riga 259
     temp=document.getElementById('ML').innerHTML;
     temp=setInner(temp);
-    document.getElementById('ML').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"ML-"+actualYear+"\" onkeyup=\"calculateEBITDA("+actualYear+"),calculateE=B("+actualYear+"),calculateE=E("+actualYear+"),calculateE=F("+actualYear+"),calculateE("+actualYear+")\"> </td>";
+    document.getElementById('ML').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"ML-"+actualYear+"\" onkeyup=\"calculateEBITDA("+actualYear+"),calculateE=B("+actualYear+"),("+actualYear+"),calculateE=F("+actualYear+"),calculateE("+actualYear+")\"> </td>";
 
     //riga 260
     temp=document.getElementById('E.B2').innerHTML;
