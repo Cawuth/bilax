@@ -38,5 +38,8 @@ N_150518_2125_CWT: in realtà a quanto pare non capisco cosa si intenda per ines
 Manca sempre calculatePP
 Con PP.D7 e sottocelle manda output a caso sulla console ma funziona, non lo fa coi precedenti
 Errore, lo fa anche con PP.D8 quindi sarà qualcosa a che fare con calculatePPD secondo me
-Tutto PP funziona sintatticamente tranne per l'assenza di calculatePP
+Tutto PP funziona sintatticamente tranne per l'assenza di calculatePP ENDN
+
+N_150518_2230_CWT: per oggi ho finito, ho corretto gran parte dei conflitti a fine stato economico, bisognerebbe aggiornarne le funzioni,
+ma lo farò quando correggerò i bug precisi del codice, domani correggo i conflitti con E=B
 
