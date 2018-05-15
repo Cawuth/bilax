@@ -1265,22 +1265,24 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 	temp=document.getElementById('E.F').innerHTML;
 	temp=setInner(temp);
 	document.getElementById('E.F').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F-"+actualYear+"\"> <td>";
-//E.F1
-    temp=document.getElementById('E.F1').innerHTML;
+
+
+//E.F11
+    temp=document.getElementById('E.F11').innerHTML;
     temp=setInner(temp);
-    document.getElementById('E.F1').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F1-"+actualYear+"\" onkeyup=\"calculateEF("+actualYear+"),calculateE=F("+actualYear+"),calculateE=H("+actualYear+")\"> </td>";
-//E.F2
-    temp=document.getElementById('E.F2').innerHTML;
+    document.getElementById('E.F11').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F11-"+actualYear+"\" onkeyup=\"calculateEF("+actualYear+"),calculateE=F("+actualYear+"),calculateE=H("+actualYear+")\"> </td>";
+//E.F12
+    temp=document.getElementById('E.F12').innerHTML;
     temp=setInner(temp);
-    document.getElementById('E.F2').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F2-"+actualYear+"\" onkeyup=\"calculateEF("+actualYear+"),calculateE=F("+actualYear+"),calculateE=H("+actualYear+")\"> </td>";
-//E.F3
-    temp=document.getElementById('E.F3').innerHTML;
+    document.getElementById('E.F12').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F12-"+actualYear+"\" onkeyup=\"calculateEF("+actualYear+"),calculateE=F("+actualYear+"),calculateE=H("+actualYear+")\"> </td>";
+//E.F13
+    temp=document.getElementById('E.F13').innerHTML;
     temp=setInner(temp);
-    document.getElementById('E.F3').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F3-"+actualYear+"\" onkeyup=\"calculateEF("+actualYear+"),calculateE=F("+actualYear+"),calculateE=H("+actualYear+")\"> </td>";
-//E.F4
-    temp=document.getElementById('E.F4').innerHTML;
+    document.getElementById('E.F13').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F13-"+actualYear+"\" onkeyup=\"calculateEF("+actualYear+"),calculateE=F("+actualYear+"),calculateE=H("+actualYear+")\"> </td>";
+//E.F14
+    temp=document.getElementById('E.F14').innerHTML;
     temp=setInner(temp);
-    document.getElementById('E.F4').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F4-"+actualYear+"\" onkeyup=\"calculateEF("+actualYear+"),calculateE=F("+actualYear+"),calculateE=H("+actualYear+")\"> </td>";
+    document.getElementById('E.F14').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F14-"+actualYear+"\" onkeyup=\"calculateEF("+actualYear+"),calculateE=F("+actualYear+"),calculateE=H("+actualYear+")\"> </td>";
 //E.G
     temp=document.getElementById('E.G').innerHTML;
     temp=setInner(temp);
