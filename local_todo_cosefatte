@@ -1,3 +1,6 @@
+Legenda: N lo usiamo per indicare le note
+Esempio: N_150518_2125_CWT è una nota del 15 maggio 2018 alle 21:25 fatta da Cawuth (usate alcune lettere per identificarvi)
+
 - controllo errori sintassi
 - aggiunta cose tolte precedentemente
 - correzione con la riga 274 di bellentani
@@ -30,4 +33,10 @@ Notare la presenza di PP.DF tra PP.D2 e PP.D3
 
 4. Manca PP.DF nel codice
 
-Nota: fino a PP.D5b va tutto bene tranne per l'inesistenza di PP.D5
+Nota_CWT: fino a PP.D5b va tutto bene tranne per l'inesistenza di PP.D5
+N_150518_2125_CWT: in realtà a quanto pare non capisco cosa si intenda per inesistenza di PP.D5 perché sembra andare tutto, quindi passerò oltre
+Manca sempre calculatePP
+Con PP.D7 e sottocelle manda output a caso sulla console ma funziona, non lo fa coi precedenti
+Errore, lo fa anche con PP.D8 quindi sarà qualcosa a che fare con calculatePPD secondo me
+Tutto PP funziona sintatticamente tranne per l'assenza di calculatePP
+
