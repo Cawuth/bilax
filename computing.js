@@ -1264,7 +1264,7 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 //E.F
 	temp=document.getElementById('E.F').innerHTML;
 	temp=setInner(temp);
-	document.getElementById('E.F').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F-"+actualYear+"\"> <td>";
+	document.getElementById('E.F').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F-"+actualYear+"\"> </td>";
 
 
 //E.F11
