@@ -1285,10 +1285,18 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     temp=document.getElementById('E.F14').innerHTML;
     temp=setInner(temp);
     document.getElementById('E.F14').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F14-"+actualYear+"\" onkeyup=\"calculateEF1("+actualYear+"),calculateE=F("+actualYear+"),calculateE=H("+actualYear+")\"> </td>";
+//E.F2
+	temp=document.getElementById('E.F2').innerHTML;
+	temp=setInner(temp);
+	document.getElementById('E.F2').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F2-"+actualYear+"\"> </td>";
 //E.G
     temp=document.getElementById('E.G').innerHTML;
     temp=setInner(temp);
     document.getElementById('E.G').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.G-"+actualYear+"\" onkeyup=\"calculateE=H("+actualYear+")\"> </td>";
+//E.H
+	temp=document.getElementById('E.H').innerHTML;
+	temp=setInner(temp);
+	document.getElementById('E.H').innerHTML=temp+"<td> <input type="text" value=\"0\" id=\"E.H-"+actualYear+"\"> </td>";
 }
 
 function calculatePA(anno){
