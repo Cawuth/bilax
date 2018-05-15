@@ -1296,7 +1296,7 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 //E.H
 	temp=document.getElementById('E.H').innerHTML;
 	temp=setInner(temp);
-	document.getElementById('E.H').innerHTML=temp+"<td> <input type="text" value=\"0\" id=\"E.H-"+actualYear+"\"> </td>";
+	document.getElementById('E.H').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.H-"+actualYear+"\"> </td>";
 }
 
 function calculatePA(anno){
