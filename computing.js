@@ -1261,7 +1261,11 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     temp=document.getElementById('E.E').innerHTML;
     temp=setInner(temp);
     document.getElementById('E.E').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.E-"+actualYear+"\" onkeyup=\"calculateE=E("+actualYear+"),calculateE=F("+actualYear+"),calculateE=H("+actualYear+")\"> </td>";
-    //E.F1
+//E.F
+	temp=document.getElementById('E.F').innerHTML;
+	temp=setInner(temp);
+	document.getElementById('E.F').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F-"+actualYear+"\"> <td>";
+//E.F1
     temp=document.getElementById('E.F1').innerHTML;
     temp=setInner(temp);
     document.getElementById('E.F1').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F1-"+actualYear+"\" onkeyup=\"calculateEF("+actualYear+"),calculateE=F("+actualYear+"),calculateE=H("+actualYear+")\"> </td>";
