@@ -1265,8 +1265,10 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 	temp=document.getElementById('E.F').innerHTML;
 	temp=setInner(temp);
 	document.getElementById('E.F').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F-"+actualYear+"\"> </td>";
-
-
+//E.F1
+	temp=document.getElementById('E.F1').innerHTML;
+	temp=setInner(temp);
+	document.getElementById('E.F1').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.F-"+actualYear+"\"> </td>";
 //E.F11
     temp=document.getElementById('E.F11').innerHTML;
     temp=setInner(temp);
