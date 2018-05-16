@@ -1353,6 +1353,14 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 	temp=document.getElementById('LCR').innerHTML;
     	temp=setInner(temp);
 	document.getElementById('LCR').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"LCR-"+actualYear+"\" </td>";
+//ACL
+	temp=document.getElementById('ACL').innerHTML;
+    	temp=setInner(temp);
+	document.getElementById('ACL').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"ACL-"+actualYear+"\" </td>";
+//TI
+	temp=document.getElementById('TI').innerHTML;
+    	temp=setInner(temp);
+	document.getElementById('TI').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"TI-"+actualYear+"\" </td>";
 	
 }
 
