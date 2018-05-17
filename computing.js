@@ -2254,6 +2254,31 @@ function calculatePAD(anno) {
     somma=PAD1+PAD2;
     document.getElementById('PA.D-'+anno).value=somma;
 }
+function calculatePP(anno) {
+    var PPAString=document.getElementById('PP.A-'+anno).value;
+    var PPBString=document.getElementById('PP.B-'+anno).value;
+    var PPCString=document.getElementById('PP.C-'+anno).value;
+    var PPDString=document.getElementById('PP.D-'+anno).value;
+    var PPA=parseFloat(PPAString);
+    var PPB=parseFloat(PPBString);
+    var PPC=parseFloat(PPCString);
+    var PPD=parseFloat(PPDString);
+    var somma;
+    if(isNaN(PPA)) {
+        PPA=0;
+    }
+    if(isNaN(PPB)) {
+        PPB=0;
+    }
+    if(isNaN(PPC)) {
+        PPC=0;
+    }
+    if(isNaN(PPD)) {
+        PPD=0;
+    }
+    somma=PPA+PPB+PPC+PPD;
+    document.getElementById('PP-'+anno).value=somma;
+}
 //riga 128
 function calculatePPA(anno) {
     var PPA1String=document.getElementById('PP.A1-'+anno).value;
