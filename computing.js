@@ -1357,10 +1357,10 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 	temp=document.getElementById('ACL').innerHTML;
     	temp=setInner(temp);
 	document.getElementById('ACL').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"ACL-"+actualYear+"\" </td>";
-//TI
-	temp=document.getElementById('TI').innerHTML;
+//TICI
+	temp=document.getElementById('TICI').innerHTML;
     	temp=setInner(temp);
-	document.getElementById('TI').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"TI-"+actualYear+"\" </td>";
+	document.getElementById('TICI').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"TICI-"+actualYear+"\" </td>";
 	
 }
 
@@ -3656,7 +3656,7 @@ function calculateACO(anno){
         RR=0;
     }
     valore=R+C+CRE+CRO+FNI+LI+RR;
-    document.getElementById('ACO'+anno).value=valore;
+    document.getElementById('ACO-'+anno).value=valore;
 }
 function calculateLCR(anno){
     var CString=document.getElementById('C-'+anno).value;
@@ -3686,5 +3686,35 @@ function calculateLCR(anno){
         RR=0;
     }
     valore=C+CRE+FNI+LI+RR;
-    document.getElementById('LCR'+anno).value=valore;
+    document.getElementById('LCR-'+anno).value=valore;
+}
+function calculateACL(anno){
+    var LIString=document.getElementById('LI-'+anno).value;
+    var ACOString=document.getElementById('ACO-'+anno).value;
+    var LI=parseFloat(LIString);
+    var ACO=parseFloat(ACOString);
+    var valore;
+    if(isNaN(LI)){
+        LI=0;
+    }
+    if(isNaN(ACO)){
+        ACO=0;
+    }
+    valore=ACO-LI;
+    document.getElementById('ACL-'+anno).value=valore;
+}
+function calculateTICI(anno){
+    var ACString=document.getElementById('AC-'+anno).value;
+    var ACOString=document.getElementById('ACO-'+anno).value;
+    var AC=parseFloat(ACString);
+    var ACO=parseFloat(ACOString);
+    var valore;
+    if(isNaN(AC)){
+        AC=0;
+    }
+    if(isNaN(ACO)){
+        ACO=0;
+    }
+    valore=AC+ACO;
+    document.getElementById('TICI-'+anno).value=valore;
 }
