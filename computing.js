@@ -1344,7 +1344,7 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 //RR
 	temp=document.getElementById('RR').innerHTML;	
 	temp=setInner(temp);
-	document.getElementById('RR').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"RR-"+actualYear+"\" </td>";.
+	document.getElementById('RR').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"RR-"+actualYear+"\" </td>";
 //ACO
 	temp=document.getElementById('ACO').innerHTML;
     	temp=setInner(temp);
