@@ -573,7 +573,7 @@ function aggiungiColonna(){
     //PP
     temp=document.getElementById('PP').innerHTML;
     temp=setInner(temp);
-    document.getElementById('PP').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.A-"+actualYear+"\"></td>";
+    document.getElementById('PP').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP-"+actualYear+"\"></td>";
 //PP.A
     temp=document.getElementById('PP.A').innerHTML;
     temp=setInner(temp);
@@ -944,7 +944,7 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     //riga 249
     temp=document.getElementById('E.A').innerHTML;
     temp=setInner(temp);
-    document.getElementById('E.A').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"E.A-"+actualYear+"\" onkeyup=\"calculateML("+actualYear+"),calculateE("+actualYear+")\"> </td>";
+    document.getElementById('E.A').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"E.A-"+actualYear+"\" onkeyup=\"calculateExB("+actualYear+"),calculateML("+actualYear+"),calculateE("+actualYear+")\"> </td>";
 
     //riga 250
     temp=document.getElementById('E.A1').innerHTML;
@@ -984,7 +984,7 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     //riga 257
     temp=document.getElementById('E.B').innerHTML;
     temp=setInner(temp);
-    document.getElementById('E.B').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"E.B-"+actualYear+"\" onkeyup=\"calculateE("+actualYear+")\"> </td>";
+    document.getElementById('E.B').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"E.B-"+actualYear+"\" onkeyup=\"calculateExB("+actualYear+"),calculateE("+actualYear+")\"> </td>";
 
     //riga 258
     temp=document.getElementById('E.B1').innerHTML;
@@ -994,7 +994,7 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     //riga 259
     temp=document.getElementById('ML').innerHTML;
     temp=setInner(temp);
-    document.getElementById('ML').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"ML-"+actualYear+"\" onkeyup=\"calculateEBITDA("+actualYear+"),calculateE=B("+actualYear+"),calculateEF1("+actualYear+"),calculateE=F("+actualYear+"),calculateE("+actualYear+")\"> </td>";
+    document.getElementById('ML').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"ML-"+actualYear+"\" onkeyup=\"calculateEBITDA("+actualYear+"),calculateExB("+actualYear+"),calculateEF1("+actualYear+"),calculateE=F("+actualYear+"),calculateE("+actualYear+")\"> </td>";
 
     //riga 260
     temp=document.getElementById('E.B2').innerHTML;
@@ -1030,8 +1030,10 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     temp=document.getElementById('E.B45').innerHTML;
     temp=setInner(temp);
     document.getElementById('E.B45').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.B45-"+actualYear+"\" onkeyup=\"calculateEB("+actualYear+"),calculateEB4("+actualYear+"),calculateEBITDA("+actualYear+"),calculateE=B("+actualYear+"),calculateEF1("+actualYear+"),calculateE=F("+actualYear+"),calculateE=H("+actualYear+")\"> </td>";
-//EBITIDA
-
+//EBITDA
+	temp=document.getElementById('EBITDA').innerHTML;
+	temp=setInner(temp);
+	document.getElementById('EBITDA').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"EBITDA-"+actualYear+"\"> </td>";
 
     //E.B5
     temp=document.getElementById('E.B5').innerHTML;
@@ -1069,6 +1071,10 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     temp=document.getElementById('E.B9').innerHTML;
     temp=setInner(temp);
     document.getElementById('E.B9').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.B9-"+actualYear+"\" onkeyup=\"calculateEB("+actualYear+"),calculateE=B("+actualYear+"),calculateEF1("+actualYear+"),calculateE=F("+actualYear+"),calculateE=H("+actualYear+")\"> </td>";
+//ExB - EBIT
+	temp=document.getElementById('ExB').innerHTML;
+	temp=setInner(temp);
+	document.getElementById('ExB').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"ExB-"+actualYear+"\"> </td>";
 //E.C1
     temp=document.getElementById('E.C1').innerHTML;
     temp=setInner(temp);
@@ -2222,9 +2228,9 @@ function calculatePAC4(anno) {
     var PAC41String=document.getElementById('PA.C41-'+anno).value;
     var PAC42String=document.getElementById('PA.C42-'+anno).value;
     var PAC43String=document.getElementById('PA.C43-'+anno).value;
-    var PAC41=parseFloat(PAC41);
-    var PAC42=parseFloat(PAC42);
-    var PAC43=parseFloat(PAC43);
+    var PAC41=parseFloat(PAC41String);
+    var PAC42=parseFloat(PAC42String);
+    var PAC43=parseFloat(PAC43String);
     var somma;
     if(isNaN(PAC41)) {
         PAC41=0;
@@ -2236,14 +2242,14 @@ function calculatePAC4(anno) {
         PAC43=0;
     }
     somma=PAC41+PAC42+PAC43;
-    document.getElementById('PA.C4').value=somma;
+    document.getElementById('PA.C4-'+anno).value=somma;
 }
 //riga 124
 function calculatePAD(anno) {
     var PAD1String=document.getElementById('PA.D1-'+anno).value;
     var PAD2String=document.getElementById('PA.D2-'+anno).value;
-    var PAD1=parseFloat(PAD1);
-    var PAD2=parseFloat(PAD2);
+    var PAD1=parseFloat(PAD1String);
+    var PAD2=parseFloat(PAD2String);
     var somma;
     if(isNaN(PAD1)) {
         PAD1=0;
@@ -2259,10 +2265,12 @@ function calculatePP(anno) {
     var PPBString=document.getElementById('PP.B-'+anno).value;
     var PPCString=document.getElementById('PP.C-'+anno).value;
     var PPDString=document.getElementById('PP.D-'+anno).value;
+	var PPEString=document.getElementById('PP.E-'+anno).value;
     var PPA=parseFloat(PPAString);
     var PPB=parseFloat(PPBString);
     var PPC=parseFloat(PPCString);
     var PPD=parseFloat(PPDString);
+	var PPE=parseFloat(PPEString);
     var somma;
     if(isNaN(PPA)) {
         PPA=0;
@@ -2276,9 +2284,13 @@ function calculatePP(anno) {
     if(isNaN(PPD)) {
         PPD=0;
     }
-    somma=PPA+PPB+PPC+PPD;
+	if(isNaN(PPE)){
+		PPE=0;
+	}
+    somma=PPA+PPB+PPC+PPD+PPE;
     document.getElementById('PP-'+anno).value=somma;
 }
+
 //riga 128
 function calculatePPA(anno) {
     var PPA1String=document.getElementById('PP.A1-'+anno).value;
@@ -3117,10 +3129,12 @@ function calculateEBITDA(anno){
     var EB2String=document.getElementById('E.B2-'+anno).value;
     var EB3String=document.getElementById('E.B3-'+anno).value;
     var EB4String=document.getElementById('E.B4-'+anno).value;
-    var EB41=parseFloat(MLString);
-    var EB42=parseFloat(EB2String);
-    var EB43=parseFloat(EB3String);
-    var EB44=parseFloat(EB4String);
+    var EB6String=document.getElementById('E.B6-'+anno).value;
+	var ML=parseFloat(MLString);
+	var EB2=parseFloat(EB2String);
+	var EB3=parseFloat(EB3String);
+	var EB4=parseFloat(EB4String);
+	var EB6=parseFloat(EB6String);
     var valore;
     if(isNaN(ML)){
         ML=0;
@@ -3134,7 +3148,10 @@ function calculateEBITDA(anno){
     if(isNaN(EB4)){
         EB4=0;
     }
-    valore=ML-EB2+EB3+EB4;
+	if(isNaN(EB6)){
+		EB6=0;
+	}
+    valore=ML-EB2-EB3-EB4-EB6;
     document.getElementById('EBITDA-'+anno).value=valore;
 }
 
@@ -3163,7 +3180,7 @@ function calculateEB5(anno){
     valore=EB51+EB52+EB53+EB54;
     document.getElementById('E.B5-'+anno).value=valore;
 }
-/*function calculateE=B (anno) {
+function calculateExB (anno) {
     var EAString=document.getElementById('E.A-'+anno).value;
     var EBString=document.getElementById('E.B-'+anno).value;
     var EA=parseFloat(EAString);
@@ -3176,8 +3193,8 @@ function calculateEB5(anno){
         EB=0;
     }
     valore=EA-EB;
-    document.getElementById('E=B-'+anno).value=valore;
-}*/
+    document.getElementById('ExB-'+anno).value=valore;
+}
 function calculateEC(anno){
     var EC1String=document.getElementById('E.C1-'+anno).value;
     var EC2String=document.getElementById('E.C2-'+anno).value;
