@@ -4105,3 +4105,416 @@ function calculateTF(anno){
     valore=PMLTPN+PR;
     document.getElementById('TF-'+anno).value=valore;
 }
+//INDICI
+//riga 384
+function calculateROE(anno){
+    var EHString=document.getElementById('E.H-'+anno).value;
+    var PNString=document.getElementById('PN-'+anno).value;
+    var EH=parseFloat(EHString);
+    var PN=parseFloat(PNString);
+    var valore;
+    if(isNaN(EH)){
+        EH=0;
+    }
+    if (isNaN(PN)||PN==0) {
+        valore=999999999;
+    }
+    else valore=EH/PN;
+    document.getElementById('ROE-'+anno).value=valore;
+}
+//riga 387
+function calculateROA(anno){
+    var EHString=document.getElementById('E.H-'+anno).value;
+    var PAString=document.getElementById('PA-'+anno).value;
+    var EH=parseFloat(EHString);
+    var PA=parseFloat(PAString);
+    var valore;
+    if (isNaN(EH)) {
+        EH=0;
+    }
+    if(isNaN(PA)||PA==0){
+        valore=999999999;
+    }
+	else valore=EH/PA;
+    document.getElementById('ROA-'+anno).value=valore;
+}
+//riga 390
+function calculateROI(anno){
+    var EBString=document.getElementById('E.B-'+anno).value;
+    var CIString=document.getElementById('CI-'+anno).value;
+    var EB=parseFloat(EBString);
+    var CI=parseFloat(CIString);
+    var valore;
+    if (isNaN(EB)) {
+        EB=0;
+    }
+    if(isNaN(CI)||CI==0) {
+        valore=999999999;
+    }
+	else valore=EB/CI;
+    document.getElementById('ROI-'+anno).value=valore;
+}
+//riga 393
+function calculateROS(anno){
+    var EBString=document.getElementById('E.B-'+anno).value;
+    var EA1String=document.getElementById('E.A1-'+anno).value;
+    var EB=parseFloat(EBString);
+    var EA1=parseFloat(EA1String);
+    var valore;
+    if (isNaN(EB)) {
+        EB=0;
+    }
+    if(isNaN(EA1)||EA1==0){
+        valore=999999999;
+    }
+	else valore=EB/EA1;
+    document.getElementById('ROS-'+anno).value=valore;
+}
+//riga 398
+function calculateTRN(anno){
+    var EA1String=document.getElementById('E.A1-'+anno).value;
+    var CIString=document.getElementById('CI-'+anno).value;
+    var EA1=parseFloat(EA1String);
+    var CI=parseFloat(CIString);
+    var valore;
+    if (isNaN(EA1)) {
+        valore=0;
+    }
+    if(isNaN(CI)||CI==0){
+        valore=999999999;
+    }
+	else valore=EA1/CI;
+    document.getElementById('TRN-'+anno).value=valore;
+}
+//riga 403
+function calculateLAT(anno){
+    var ACString=document.getElementById('AC-'+anno).value;
+    var RString=document.getElementById('R-'+anno).value;
+    var PRString=document.getElementById('PR-'+anno).value;
+    var AC=parseFloat(ACString);
+    var R=parseFloat(RString);
+    var PR=parseFloat(PRString);
+    var valore;
+    if (isNaN(AC)) {
+        AC=0;
+    }
+    if (isNaN(R)) {
+        R=0;
+    }
+    if(isNaN(PR)||PR==0) {
+        valore=999999999;
+    }
+    else valore=(AC-R)/PR;
+    document.getElementById('LAT-'+anno).value=valore;
+}
+//riga 407
+function calculateMPT(anno){
+    var LIString=document.getElementById('LI-'+anno).value;
+    var PRString=document.getElementById('PR-'+anno).value;
+    var LI=parseFloat(LIString);
+    var PR=parseFloat(PRString);
+    var valore;
+    if (isNaN(LI)) {
+        LI=0;
+    }
+    if(isNaN(PR)) {
+        PR=0;
+    }
+    valore=LI-PR;
+    document.getElementById('MPT-'+anno).value=valore;
+}
+//riga 408
+function calculateMST(anno){
+    var ACString=document.getElementById('AC-'+anno).value;
+    var RString=document.getElementById('R-'+anno).value;
+    var PRString=document.getElementById('PR-'+anno).value;
+    var AC=parseFloat(ACString);
+    var R=parseFloat(RString);
+    var PR=parseFloat(PRString);
+    var valore;
+    if (isNaN(AC)) {
+        AC=0;
+    }
+    if (isNaN(R)) {
+        R=0;
+    }
+    if(isNaN(PR)) {
+        PR=0;
+    }
+    valore=AC-R-PR;
+    document.getElementById('MST-'+anno).value=valore;
+}
+//riga 409
+function calculateMD(anno){
+    var RString=document.getElementById('R-'+anno).value;
+    var CREString=document.getElementById('CRE-'+anno).value;
+    var CString=document.getElementById('C-'+anno).value; 
+    var LIString=document.getElementById('LI-'+anno).value;
+    var PRString=document.getElementById('PR-'+anno).value;
+    var R=parseFloat(RString);
+    var CRE=parseFloat(CREString);
+    var C=parseFloat(CString);
+    var LI=parseFloat(LIString);
+    var PR=parseFloat(PRString);
+    var valore;
+    if (isNaN(R)) {
+        R=0;
+    }
+    if (isNaN(CRE)) {
+        CRE=0;
+    }
+    if (isNaN(C)) {
+        C=0;
+    } 
+    if (isNaN(LI)) {
+        LI=0;
+    }
+    if(isNaN(PR)) {
+        PR=0;
+    }
+    valore=R+CRE+C+LI-PR;
+    document.getElementById('MD-'+anno).value=valore;
+}
+//riga 414
+function calculateLC(anno){
+    var ACString=document.getElementById('AC-'+anno).value;
+    var PRString=document.getElementById('PR-'+anno).value;
+    var AC=parseFloat(ACString);
+    var PR=parseFloat(PRString);
+    var valore;
+    if (isNaN(AC)) {
+        AC=0;
+    }
+    if (isNaN(PR)||PR==0) {
+        valore=999999999;
+    }
+    else valore=AC/PR;
+    document.getElementById('LC-'+anno).value=valore;
+}
+//riga 418
+function calculateVCCN(anno){
+    var CCN1String=document.getElementById('CCN-'+anno).value;
+    var CCN2String=document.getElementById('CCN-'+(anno-1).value;
+    var CCN1=parseFloat(CCN1String);
+    var CCN2=parseFloat(CCN2String);
+    var valore;
+    if (isNaN(CCN1)) {
+        CCN1=0;
+    }
+    if (isNaN(CCN2)) {
+        CCN2=0;
+    }
+    valore=CCN1-CCN2;
+    document.getElementById('VCCN-'+anno).value=valore;
+}
+//riga 420
+function calculateIIC(anno){
+    var EA1String=document.getElementById('EA1-'+anno).value;
+    var CString=document.getElementById('C-'+anno).value;
+    var EA1=parseFloat(EA1String);
+    var C=parseFloat(CString);
+    var valore;
+    if (isNaN(C)) {
+        C=0;
+    }
+    if (isNaN(EA1)||EA1==0) {
+        valore=999999999;
+    }
+    else valore=C/EA1*365/1.22;
+    document.getElementById('IIC-'+anno).value=valore;
+}
+//riga 423
+function calculateGCM(anno){
+    var RString=document.getElementById('R-'+anno).value;
+    var EA1String=document.getElementById('EA1-'+anno).value;
+    var R=parseFloat(RString);
+    var EA1=parseFloat(EA1String);
+    var valore;
+    if (isNaN(R)) {
+        R=0;
+    }
+    if (isNaN(EA1)||EA1==0) {
+        valore=999999999;
+    }
+    else valore=R/EA1*365;
+    document.getElementById('LC-'+anno).value=valore;
+}
+//riga 426
+function calculateIPF(anno){
+    var FString=document.getElementById('F-'+anno).value;
+    var EB1String=document.getElementById('EB1-'+anno).value;
+    var EB2String=document.getElementById('EB2-'+anno).value;
+    var EB3String=document.getElementById('EB3-'+anno).value;
+    var F=parseFloat(FString);
+    var EB1=parseFloat(EB1String);
+    var EB2=parseFloat(EB2String);
+    var EB3=parseFloat(EB3String);
+    var valore;
+    if (isNaN(F)) {
+        F=0;
+    }
+    if (isNaN(EB1)) {
+        EB1=0;
+    }
+    if (isNaN(EB2)) {
+        EB2=0;
+    }
+    if (isNaN(EB3)) {
+        EB3=0;
+    }
+    if (EB1+EB2+EB3==0) {
+        valore=999999999;
+    }
+    else valore=F/(EB1+EB2+EB3)*365/1.22;
+    document.getElementById('IPF-'+anno).value=valore;
+}
+//riga 429
+function calculateCDC(anno){
+    var IICString=document.getElementById('IIC-'+anno).value;
+    var GCMString=document.getElementById('GCM-'+anno).value;
+    var IPFString=document.getElementById("IPF-"+anno).value;
+    var IIC=parseFloat(IICString);
+    var GCM=parseFloat(GCMString);
+    var IPF=parseFloat(IPFString);
+    var valore;
+    if (isNaN(IIC)) {
+        IIC=0;
+    }
+    if (isNaN(GCM)) {
+        GCM=0;
+    }
+    if (isNaN(IPF)) {
+        IPF=0;
+    }
+    valore=IIC+GCM-IPF;
+    document.getElementById('CDC-'+anno).value=valore;
+}
+//riga 433
+function calculateRM(anno) {
+    var EA1String=document.getElementById("EA1-"+anno).value;
+    var RString=document.getElementById("R-"+anno).value;
+    var EA1=parseFloat(EA1String);
+    var R=parseFloat(RString);
+    var valore;
+    if (isNaN(EA1)) {
+        EA1=0;
+    }
+    if (isNaN(R)||R==0) {
+        valore=999999999;
+    }
+    else valore=EA1/R;
+    document.getElementById('RM-'+anno).value=valore;
+}
+//riga 437
+function calculateLTACP(anno) {
+    var CIString=document.getElementById("CI-"+anno).value;
+    var PNString=document.getElementById("PN-"+anno).value;
+    var CI=parseFloat(CIString);
+    var PN=parseFloat(PNString);
+    var valore;
+    if (isNaN(CI)) {
+        CI=0;
+    }
+    if (isNaN(PN)||PN==0) {
+        valore=999999999;
+    }
+    else valore=CI/PN;
+    document.getElementById('LTACP-'+anno).value=valore;
+}
+//riga 441 o riga 444 CALCOLANO LA STESSA COSA (POSSIBILE ERRORE NEL BILANCIO)
+function calculateGDC(anno) {
+    var PNString=document.getElementById("PN-"+anno).value;
+    var MLTString=document.getElementById("MLT-"+anno).value;
+    var BTString=document.getElementById('BT-'+anno).value;
+    var PN=parseFloat(PNString);
+    var MLT=parseFloat(MLTString);
+    var BT=parseFloat(BTString);
+    var valore;
+    if (isNaN(PN)) {
+        PN=0;
+    }
+    if (isNaN(MLT)) {
+        MLT=0;
+    }
+    if (isNaN(BT)) {
+        BT=0;
+    }
+    if (MLT+BT==0) {
+        valore=999999999;
+    }
+    else valore=PN/(MLT+BT);
+    document.getElementById('GDC-'+anno).value=valore;
+}
+//riga 448
+function calculateIND(anno) {
+    var CIString=document.getElementById("CI-"+anno).value;
+    var MLTString=document.getElementById("MLT-"+anno).value;
+    var BTString=document.getElementById('BT-'+anno).value;
+    var DNFEString=document.getElementById('DNFE-'+anno).value;
+    var DNFOString=document.getElementById('DNFO-'+anno).value;
+    var CI=parseFloat(CIString);
+    var MLT=parseFloat(MLTString);
+    var BT=parseFloat(BTString);
+    var DNFE=parseFloat(DNFEString);
+    var DNFO=parseFloat(DNFOString);
+    var valore;
+    if (isNaN(DNFE)) {
+        DNFE=0;
+    }
+    if (isNaN(DNFO)) {
+        DNFO=0;
+    }
+    if (isNaN(MLT)) {
+        MLT=0;
+    }
+    if (isNaN(BT)) {
+        BT=0;
+    }
+    if (isNaN(CI)||CI==0) {
+        valore=999999999;
+    }
+    else valore=(BT+MLT+DNFE+DNFO)/CI;
+    document.getElementById('IND-'+anno).value=valore;
+}
+//riga 451
+function calculateQDI(anno) {
+    var CIString=document.getElementById("CI-"+anno).value;
+    var PNString=document.getElementById("PN-"+anno).value;
+    var CI=parseFloat(CIString);
+    var PN=parseFloat(PNString);
+    var valore;
+    if (isNaN(CI)) {
+        CI=0;
+    }
+    if (isNaN(PN)||PN==0) {
+        valore=999999999;
+    }
+    else valore=(CI-PN)/PN;
+    document.getElementById('QDI-'+anno).value=valore;
+}
+//riga 452
+function calculateIFN(anno) {
+    var LIString=document.getElementById('LI-'+anno).value;
+    var PNString=document.getElementById('PN-'+anno).value;
+    var MLTString=document.getElementById('MLT-'+anno).value;
+    var BTString=document.getElementById('BT-'+anno).value;
+    var LI=parseFloat(LIString);
+    var PN=parseFloat(PNString);
+    var MLT=parseFloat(MLTString);
+    var BT=parseFloat(BTString);
+    var valore;
+    if (isNaN(BT)) {
+        BT=0;
+    }
+    if (isNaN(MLT)) {
+        MLT=0;
+    }
+    if (isNaN(LI)) {
+        LI=0;
+    }
+    if (isNaN(PN)||PN==0) {
+        valore=999999999;
+    }
+    else valore=(BT+MLT-LI)/PN;
+    document.getElementById('IFN-'+anno).value;
+}
