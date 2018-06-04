@@ -50,3 +50,7 @@ N_030618_17_CWT: inizio a lavorare nuovamente
 - aggiunto PP.E tra i valori calcolati in PP
 - ora EBITDA viene aggiunto, ma ha diversi bug da correggere
 - ora viene calcolato EBIT, id ExB
+
+N_040618_1822_CWT:
+- ora somma proventi straordinari, per correggere questo ho dovuto fare anche molte correzioni causate da errori a loro volta causati da
+vecchi problemi di conflitto per colpa degli uguali, quindi il lavoro dei prossimi giorni dovrebbe essere più semplice.
