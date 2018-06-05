@@ -52,7 +52,7 @@ function aggiungiColonna(){
     //PA
     temp=document.getElementById('PA').innerHTML;
     temp=setInner(temp);
-    document.getElementById('PA').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA-"+actualYear+"\"> </td>";
+    document.getElementById('PA').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA-"+actualYear+" onkeyup=\"calculateROA("+actualYear+")\\"> </td>";
 
     //PA.A
     temp=document.getElementById('PA.A').innerHTML;
@@ -1296,7 +1296,7 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 //E.H
 	temp=document.getElementById('E.H').innerHTML;
 	temp=setInner(temp);
-	document.getElementById('E.H').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.H-"+actualYear+"\"> </td>";
+	document.getElementById('E.H').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.H-"+actualYear+"\" onkeyup=\"calculateROE("+actualYear+"),calculateROA("+actualYear+")\"> </td>";
 //II
    	temp=document.getElementById('II').innerHTML;
    	temp=setInner(temp);
@@ -1364,7 +1364,7 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 //PN
 	temp=document.getElementById('PN').innerHTML;
     	temp=setInner(temp);
-	document.getElementById('PN').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"PN-"+actualYear+"\" </td>";
+	document.getElementById('PN').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"PN-"+actualYear+"\" onkeyup=\"calculateROE("+actualYear+")\</td>";
 //FO
 	temp=document.getElementById('FO').innerHTML;
     	temp=setInner(temp);
@@ -1418,6 +1418,7 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     	temp=setInner(temp);
 	document.getElementById('TF').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"TF-"+actualYear+"\" </td>";
 
+    //INDICI
     //ROE
     temp=document.getElementById('ROE').innerHTML;
     temp=setInner(temp);
