@@ -1,7 +1,8 @@
 /**
  * Created by Marco on 18/03/2018.
  */
-
+var max=10;
+var min=0-max;
 var actualYear=2014;
 
 function trovaSostituto(inner,pos){
