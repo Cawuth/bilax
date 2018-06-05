@@ -1418,6 +1418,111 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     	temp=setInner(temp);
 	document.getElementById('TF').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"TF-"+actualYear+"\" </td>";
 
+    //ROE
+    temp=document.getElementById('ROE').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('ROE').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"ROE-"+actualYear+"\" </td>";
+    
+    //ROA
+    temp=document.getElementById('ROA').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('ROA').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"ROA-"+actualYear+"\" </td>";
+    
+    //ROI
+    temp=document.getElementById('ROI').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('ROI').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"ROI-"+actualYear+"\" </td>";
+    
+    //ROS
+    temp=document.getElementById('ROS').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('ROS').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"ROS-"+actualYear+"\" </td>";
+    
+    //TRN (turnover)
+    temp=document.getElementById('TRN').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('TRN').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"TRN-"+actualYear+"\" </td>";
+    
+    //LAT (acid test)
+    temp=document.getElementById('LAT').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('LAT').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"LAT-"+actualYear+"\" </td>";
+    
+    //MPT
+    temp=document.getElementById('MPT').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('MPT').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"MPT-"+actualYear+"\" </td>";
+
+    //MST
+    temp=document.getElementById('MST').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('MST').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"MST-"+actualYear+"\" </td>";
+    
+    //MD
+    temp=document.getElementById('MD').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('MD').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"MD-"+actualYear+"\" </td>";
+    
+    //LC
+    temp=document.getElementById('LC').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('LC').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"LC-"+actualYear+"\" </td>";
+    
+    //VCCN
+    temp=document.getElementById('VCCN').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('VCCN').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"VCCN-"+actualYear+"\" </td>";
+    
+    //IIC    
+    temp=document.getElementById('IIC').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('IIC').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"IIC-"+actualYear+"\" </td>";
+
+    //GCM
+    temp=document.getElementById('GCM').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('GCM').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"GCM-"+actualYear+"\" </td>";
+
+    //IPF
+    temp=document.getElementById('IPF').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('IPF').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"IPF-"+actualYear+"\" </td>";
+
+    //CDC
+    temp=document.getElementById('CDC').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('CDC').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"CDC-"+actualYear+"\" </td>";
+
+    //RM
+    temp=document.getElementById('RM').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('RM').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"RM-"+actualYear+"\" </td>";
+
+    //LTACP
+    temp=document.getElementById('LTACP').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('LTACP').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"LTACP-"+actualYear+"\" </td>";
+
+    //GDC
+    temp=document.getElementById('GDC').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('GDC').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"GDC-"+actualYear+"\" </td>";
+
+    //IND
+    temp=document.getElementById('IND').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('IND').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"IND-"+actualYear+"\" </td>";
+
+    //QDI
+    temp=document.getElementById('QDI').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('QDI').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"QDI-"+actualYear+"\" </td>";
+
+    //IFN
+    temp=document.getElementById('IFN').innerHTML;
+    temp=setInner(temp);
+    document.getElementById('IFN').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"IFN-"+actualYear+"\" </td>";
+
 
 }
 
