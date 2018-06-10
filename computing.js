@@ -3895,8 +3895,4 @@ function calculatePMLTPN(anno){
     valore=TFR+MLT+FO+PN;
     document.getElementById('PMLTPN-'+anno).value=valore;
 }
-=======
-    valore=EE+EF;
-    document.getElementById('E.E12-'+anno).value=valore;
-}*/
 
