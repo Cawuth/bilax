@@ -1,7 +1,8 @@
 /**
  * Created by Marco on 18/03/2018.
  */
-
+var max=10;
+var min=0-max;
 var actualYear=2014;
 
 function trovaSostituto(inner,pos){
@@ -3510,6 +3511,7 @@ function calculateEF2(anno){
     if(isNaN(EF1)){
         EF=0;
     }
+
     valore=EF-EF1;
     document.getElementById('E.F2-'+anno).value=valore;
 }
@@ -3893,3 +3895,8 @@ function calculatePMLTPN(anno){
     valore=TFR+MLT+FO+PN;
     document.getElementById('PMLTPN-'+anno).value=valore;
 }
+=======
+    valore=EE+EF;
+    document.getElementById('E.E12-'+anno).value=valore;
+}*/
+
