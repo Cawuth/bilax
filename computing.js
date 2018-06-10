@@ -1,8 +1,7 @@
 /**
  * Created by Marco on 18/03/2018.
  */
-var max=10;
-var min=0-max;
+
 var actualYear=2014;
 
 function trovaSostituto(inner,pos){
@@ -45,10 +44,10 @@ function aggiungiColonna(){
     actualYear--;
     var temp; //cambiarci nome asap
 
-    //Descrizione - FUNZIONA
     temp=document.getElementById('descrizione').innerHTML;
     temp=setInner(temp);
     document.getElementById('descrizione').innerHTML=temp+"<th>"+actualYear+"</th>";
+    
 
     //PA
     temp=document.getElementById('PA').innerHTML;
@@ -3511,7 +3510,6 @@ function calculateEF2(anno){
     if(isNaN(EF1)){
         EF=0;
     }
-
     valore=EF-EF1;
     document.getElementById('E.F2-'+anno).value=valore;
 }
@@ -3895,4 +3893,3 @@ function calculatePMLTPN(anno){
     valore=TFR+MLT+FO+PN;
     document.getElementById('PMLTPN-'+anno).value=valore;
 }
-
