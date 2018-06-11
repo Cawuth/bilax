@@ -55,3 +55,7 @@ N_030618_17_CWT: inizio a lavorare nuovamente
 N_040618_1822_CWT:
 - ora somma proventi straordinari, per correggere questo ho dovuto fare anche molte correzioni causate da errori a loro volta causati da
 vecchi problemi di conflitto per colpa degli uguali, quindi il lavoro dei prossimi giorni dovrebbe essere più semplice.
+=======
+N_040618_1742_NSS: d'ora in poi userò questa branch, il mio lavoro e quello di monta sono strettamente collegati, ora modificherò il
+computing.js per mettere i temp degli indici
+>>>>>>> riclassificazione-monta
