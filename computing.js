@@ -52,11 +52,7 @@ function aggiungiColonna(){
     //PA
     temp=document.getElementById('PA').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PA').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA-"+actualYear+"\"> </td>";
-=======
     document.getElementById('PA').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA-"+actualYear+" onkeyup=\"calculateROA("+actualYear+")\\"> </td>";
->>>>>>> riclassificazione-monta
 
     //PA.A
     temp=document.getElementById('PA.A').innerHTML;
@@ -399,29 +395,6 @@ function aggiungiColonna(){
 
     temp=document.getElementById('PA.C1').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PA.C1').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C1-"+actualYear+"\" onkeyup=\"calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateR("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-
-    temp=document.getElementById('PA.C11').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C11').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C11-"+actualYear+"\" onkeyup=\"calculatePAC1("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateR("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-
-    temp=document.getElementById('PA.C12').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C12').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C12-"+actualYear+"\" onkeyup=\"calculatePAC1("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateR("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-
-    temp=document.getElementById('PA.C13').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C13').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C13-"+actualYear+"\" onkeyup=\"calculatePAC1("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateR("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-
-    temp=document.getElementById('PA.C14').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C14').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C14-"+actualYear+"\" onkeyup=\"calculatePAC1("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateR("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-
-    temp=document.getElementById('PA.C15').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C15').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C15-"+actualYear+"\" onkeyup=\"calculatePAC1("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateR("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-=======
     document.getElementById('PA.C1').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C1-"+actualYear+"\" onkeyup=\"calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateR("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
 
     temp=document.getElementById('PA.C11').innerHTML;
@@ -443,7 +416,6 @@ function aggiungiColonna(){
     temp=document.getElementById('PA.C15').innerHTML;
     temp=setInner(temp);
     document.getElementById('PA.C15').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C15-"+actualYear+"\" onkeyup=\"calculatePAC1("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateR("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     temp=document.getElementById('PA.C2').innerHTML;
     temp=setInner(temp);
@@ -455,11 +427,7 @@ function aggiungiColonna(){
 
     temp=document.getElementById('PA.C21a').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PA.C21a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C21a-"+actualYear+"\" onkeyup=\"calculatePAC21("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateC("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-=======
     document.getElementById('PA.C21a').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C21a-"+actualYear+"\" onkeyup=\"calculatePAC21("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateC("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     temp=document.getElementById('PA.C21b').innerHTML;
     temp=setInner(temp);
@@ -471,19 +439,11 @@ function aggiungiColonna(){
 
     temp=document.getElementById('PA.C22a').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PA.C22a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C22a-"+actualYear+"\" onkeyup=\"calculatePAC22("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRE("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-
-    temp=document.getElementById('PA.C22b').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C22b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C22b-"+actualYear+"\" onkeyup=\"calculatePAC22("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRO("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-=======
     document.getElementById('PA.C22a').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C22a-"+actualYear+"\" onkeyup=\"calculatePAC22("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRE("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
 
     temp=document.getElementById('PA.C22b').innerHTML;
     temp=setInner(temp);
     document.getElementById('PA.C22b').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C22b-"+actualYear+"\" onkeyup=\"calculatePAC22("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRO("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     temp=document.getElementById('PA.C23').innerHTML;
     temp=setInner(temp);
@@ -491,19 +451,11 @@ function aggiungiColonna(){
 
     temp=document.getElementById('PA.C23a').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PA.C23a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C23a-"+actualYear+"\" onkeyup=\"calculatePAC23("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRE("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-
-    temp=document.getElementById('PA.C23b').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C23b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C23b-"+actualYear+"\" onkeyup=\"calculatePAC23("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRO("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-=======
     document.getElementById('PA.C23a').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C23a-"+actualYear+"\" onkeyup=\"calculatePAC23("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRE("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
 
     temp=document.getElementById('PA.C23b').innerHTML;
     temp=setInner(temp);
     document.getElementById('PA.C23b').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C23b-"+actualYear+"\" onkeyup=\"calculatePAC23("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRO("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     temp=document.getElementById('PA.C24').innerHTML;
     temp=setInner(temp);
@@ -511,19 +463,11 @@ function aggiungiColonna(){
 
     temp=document.getElementById('PA.C24a').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PA.C24a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C24a-"+actualYear+"\" onkeyup=\"calculatePAC24("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRE("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-
-    temp=document.getElementById('PA.C24b').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C24b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C24b-"+actualYear+"\" onkeyup=\"calculatePAC24("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRO("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-=======
     document.getElementById('PA.C24a').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C24a-"+actualYear+"\" onkeyup=\"calculatePAC24("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRE("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
 
     temp=document.getElementById('PA.C24b').innerHTML;
     temp=setInner(temp);
     document.getElementById('PA.C24b').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C24b-"+actualYear+"\" onkeyup=\"calculatePAC24("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRO("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     temp=document.getElementById('PA.C2B').innerHTML;
     temp=setInner(temp);
@@ -531,19 +475,11 @@ function aggiungiColonna(){
 
     temp=document.getElementById('PA.C2Ba').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PA.C2Ba').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C2Ba-"+actualYear+"\" onkeyup=\"calculatePAC2B("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRE("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-
-    temp=document.getElementById('PA.C2Bb').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C2Bb').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C2Bb-"+actualYear+"\" onkeyup=\"calculatePAC2B("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRO("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-=======
     document.getElementById('PA.C2Ba').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C2Ba-"+actualYear+"\" onkeyup=\"calculatePAC2B("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRE("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
 
     temp=document.getElementById('PA.C2Bb').innerHTML;
     temp=setInner(temp);
     document.getElementById('PA.C2Bb').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C2Bb-"+actualYear+"\" onkeyup=\"calculatePAC2B("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRO("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     temp=document.getElementById('PA.C2T').innerHTML;
     temp=setInner(temp);
@@ -551,19 +487,11 @@ function aggiungiColonna(){
 
     temp=document.getElementById('PA.C2Ta').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PA.C2Ta').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C2Ta-"+actualYear+"\" onkeyup=\"calculatePAC2T("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRE("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-
-    temp=document.getElementById('PA.C2Tb').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C2Tb').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C2Tb-"+actualYear+"\" onkeyup=\"calculatePAC2T("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRO("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-=======
     document.getElementById('PA.C2Ta').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C2Ta-"+actualYear+"\" onkeyup=\"calculatePAC2T("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRE("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
 
     temp=document.getElementById('PA.C2Tb').innerHTML;
     temp=setInner(temp);
     document.getElementById('PA.C2Tb').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C2Tb-"+actualYear+"\" onkeyup=\"calculatePAC2T("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRO("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     temp=document.getElementById('PA.C25').innerHTML;
     temp=setInner(temp);
@@ -571,19 +499,11 @@ function aggiungiColonna(){
 
     temp=document.getElementById('PA.C25a').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PA.C25a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C25a-"+actualYear+"\" onkeyup=\"calculatePAC25("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRE("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-
-    temp=document.getElementById('PA.C25b').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C25b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C25b-"+actualYear+"\" onkeyup=\"calculatePAC25("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRO("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"> </td>";
-=======
     document.getElementById('PA.C25a').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C25a-"+actualYear+"\" onkeyup=\"calculatePAC25("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRE("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
 
     temp=document.getElementById('PA.C25b').innerHTML;
     temp=setInner(temp);
     document.getElementById('PA.C25b').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C25b-"+actualYear+"\" onkeyup=\"calculatePAC25("+actualYear+"),calculatePAC2("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateCRO("+actualYear+"),calculateACO("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     //lavoro di daniele: da riga 111 a riga 187
 //PA.C3
@@ -593,221 +513,6 @@ function aggiungiColonna(){
 //PA.C31
     temp=document.getElementById('PA.C31').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PA.C31').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C31-"+actualYear+"\" onkeyup=\"calculatePAC3("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateFNI("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-//PA.C32
-    temp=document.getElementById('PA.C32').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C32').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C32-"+actualYear+"\" onkeyup=\"calculatePAC3("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateFNI("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-//PA.C33
-    temp=document.getElementById('PA.C33').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C33').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C33-"+actualYear+"\" onkeyup=\"calculatePAC3("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateFNI("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-//PA.C34
-    temp=document.getElementById('PA.C34').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C34').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C34-"+actualYear+"\" onkeyup=\"calculatePAC3("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateFNI("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-//PA.C35
-    temp=document.getElementById('PA.C35').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C35').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C35-"+actualYear+"\" onkeyup=\"calculatePAC3("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateFNI("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-//PA.C35a
-    temp=document.getElementById('PA.C35a').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C35a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C35a-"+actualYear+"\" onkeyup=\"calculatePAC35("+actualYear+"),calculatePAC3("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateFNI("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-//PA.C35b
-    temp=document.getElementById('PA.C35b').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C35b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C35b-"+actualYear+"\" onkeyup=\"calculatePAC35("+actualYear+"),calculatePAC3("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateFNI("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-//PA.C36
-    temp=document.getElementById('PA.C36').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C36').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C36-"+actualYear+"\" onkeyup=\"calculatePAC3("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateFNI("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-//PA.C4
-    temp=document.getElementById('PA.C4').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C4').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C4-"+actualYear+"\" onkeyup=\"calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateLI("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-//PA.C41
-    temp=document.getElementById('PA.C41').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C41').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C41-"+actualYear+"\" onkeyup=\"calculatePAC4("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateLI("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-//PA.C42
-    temp=document.getElementById('PA.C42').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C42').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C42-"+actualYear+"\" onkeyup=\"calculatePAC4("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateLI("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-//PA.C43
-    temp=document.getElementById('PA.C43').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.C43').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.C43-"+actualYear+"\" onkeyup=\"calculatePAC4("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateLI("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-//PA.D
-    temp=document.getElementById('PA.D').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.D').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.D-"+actualYear+"\" onkeyup=\"calculatePA("+actualYear+"),calculateRR("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-//PA.D1
-    temp=document.getElementById('PA.D1').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.D1').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.D1-"+actualYear+"\" onkeyup=\"calculatePAD("+actualYear+"),calculatePA("+actualYear+"),calculateRR("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-//PA.D2
-    temp=document.getElementById('PA.D2').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PA.D2').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PA.D2-"+actualYear+"\" onkeyup=\"calculatePAD("+actualYear+"),calculatePA("+actualYear+"),calculateRR("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+")\"></td>";
-    //PP
-    temp=document.getElementById('PP').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP-"+actualYear+"\"></td>";
-//PP.A
-    temp=document.getElementById('PP.A').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A-"+actualYear+"\" onkeyup=\"calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A1
-    temp=document.getElementById('PP.A1').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A1').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A1-"+actualYear+"\" onkeyup=\"calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A2
-    temp=document.getElementById('PP.A2').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A2').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A2-"+actualYear+"\" onkeyup=\"calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A3
-    temp=document.getElementById('PP.A3').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A3').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A3-"+actualYear+"\" onkeyup=\"calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A4
-    temp=document.getElementById('PP.A4').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A4').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A4-"+actualYear+"\" onkeyup=\"calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A5
-    temp=document.getElementById('PP.A5').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A5').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A5-"+actualYear+"\" onkeyup=\"calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A6
-    temp=document.getElementById('PP.A6').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A6').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A6-"+actualYear+"\" onkeyup=\"calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7
-    temp=document.getElementById('PP.A7').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7-"+actualYear+"\" onkeyup=\"calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7a
-    temp=document.getElementById('PP.A7a').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7a-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7n
-    temp=document.getElementById('PP.A7n').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7n').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7n-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7o
-    temp=document.getElementById('PP.A7o').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7o').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7o-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7p
-    temp=document.getElementById('PP.A7p').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7p').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7p-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7q
-    temp=document.getElementById('PP.A7q').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7q').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7q-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7r
-    temp=document.getElementById('PP.A7r').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7r').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7r-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7s
-    temp=document.getElementById('PP.A7s').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7s').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7s-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7b
-    temp=document.getElementById('PP.A7b').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7b-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7t
-    temp=document.getElementById('PP.A7t').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7t').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7t-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7u
-    temp=document.getElementById('PP.A7u').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7u').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7u-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7v
-    temp=document.getElementById('PP.A7v').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7v').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7v-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7w
-    temp=document.getElementById('PP.A7w').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7w').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7w-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7j
-    temp=document.getElementById('PP.A7j').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7j').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7j-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7j1
-    temp=document.getElementById('PP.A7j1').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7j1').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7j1-"+actualYear+"\" onkeyup=\"calculatePPA7j("+actualYear+"),calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7j2
-    temp=document.getElementById('PP.A7j2').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7j2').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7j2-"+actualYear+"\" onkeyup=\"calculatePPA7j("+actualYear+"),calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7l
-    temp=document.getElementById('PP.A7l').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7l').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7l-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A7m
-    temp=document.getElementById('PP.A7m').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A7m').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A7m-"+actualYear+"\" onkeyup=\"calculatePPA7("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A8
-    temp=document.getElementById('PP.A8').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A8').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A8-"+actualYear+"\" onkeyup=\"calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A9
-    temp=document.getElementById('PP.A9').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A9').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A9-"+actualYear+"\" onkeyup=\"calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.A9a
-    temp=document.getElementById('PP.A9a').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A9a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A9a-"+actualYear+"\" onkeyup=\"calculatePPA9("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+",calculatePMLTPN("+actualYear+"))\"></td>";
-//PP.A9b
-    temp=document.getElementById('PP.A9b').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.A9b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.A9b-"+actualYear+"\" onkeyup=\"calculatePPA9("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.AA
-    temp=document.getElementById('PP.AA').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.AA').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.AA-"+actualYear+"\" onkeyup=\"calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.AA1
-    temp=document.getElementById('PP.AA1').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.AA1').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.AA1-"+actualYear+"\" onkeyup=\"calculatePPAA("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.AA2
-    temp=document.getElementById('PP.AA2').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.AA2').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.AA2-"+actualYear+"\" onkeyup=\"calculatePPAA("+actualYear+"),calculatePPA("+actualYear+"),calculatePP("+actualYear+"),calculatePN("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.B
-    temp=document.getElementById('PP.B').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.B').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.B-"+actualYear+"\" onkeyup=\"calculatePP("+actualYear+"),calculateFO("+actualYear+"),calculatePMLT("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.B1
-    temp=document.getElementById('PP.B1').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.B1').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.B1-"+actualYear+"\" onkeyup=\"calculatePPB("+actualYear+"),calculatePP("+actualYear+"),calculateFO("+actualYear+"),calculatePMLT("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.B2
-    temp=document.getElementById('PP.B2').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.B2').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.B2-"+actualYear+"\" onkeyup=\"calculatePPB("+actualYear+"),calculatePP("+actualYear+"),calculateFO("+actualYear+"),calculatePMLT("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.B3
-    temp=document.getElementById('PP.B3').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.B3').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.B3-"+actualYear+"\" onkeyup=\"calculatePPB("+actualYear+"),calculatePP("+actualYear+"),calculateFO("+actualYear+"),calculatePMLT("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.B4
-    temp=document.getElementById('PP.B4').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.B4').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.B4-"+actualYear+"\" onkeyup=\"calculatePPB("+actualYear+"),calculatePP("+actualYear+"),calculateFO("+actualYear+"),calculatePMLT("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-//PP.C
-    temp=document.getElementById('PP.C').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.C').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.C-"+actualYear+"\" onkeyup=\"calculatePP("+actualYear+"),calculateTFR("+actualYear+"),calculatePMLT("+actualYear+"),calculatePMLTPN("+actualYear+")\"></td>";
-=======
     document.getElementById('PA.C31').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA.C31-"+actualYear+"\" onkeyup=\"calculatePAC3("+actualYear+"),calculatePAC("+actualYear+"),calculatePA("+actualYear+"),calculateFNI("+actualYear+"),calculateACO("+actualYear+"),calculateLCR("+actualYear+"),calculateACL("+actualYear+"),calculateTICI("+actualYear+"),calculateCCN("+actualYear+")\"></td>";
 //PA.C32
     temp=document.getElementById('PA.C32').innerHTML;
@@ -1021,7 +726,6 @@ function aggiungiColonna(){
     temp=document.getElementById('PP.C').innerHTML;
     temp=setInner(temp);
     document.getElementById('PP.C').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.C-"+actualYear+"\" onkeyup=\"calculatePP("+actualYear+"),calculateTFR("+actualYear+"),calculatePMLT("+actualYear+"),calculatePMLTPN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
->>>>>>> riclassificazione-monta
 //PP.D
     temp=document.getElementById('PP.D').innerHTML;
     temp=setInner(temp);
@@ -1033,19 +737,11 @@ function aggiungiColonna(){
 //PP.D1a
     temp=document.getElementById('PP.D1a').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.D1a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D1a-"+actualYear+"\" onkeyup=\"calculatePPD1("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
-//PP.D1b
-    temp=document.getElementById('PP.D1b').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.D1b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D1b-"+actualYear+"\" onkeyup=\"calculatePPD1("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
-=======
     document.getElementById('PP.D1a').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D1a-"+actualYear+"\" onkeyup=\"calculatePPD1("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
 //PP.D1b
     temp=document.getElementById('PP.D1b').innerHTML;
     temp=setInner(temp);
     document.getElementById('PP.D1b').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D1b-"+actualYear+"\" onkeyup=\"calculatePPD1("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
->>>>>>> riclassificazione-monta
 //PP.D2
     temp=document.getElementById('PP.D2').innerHTML;
     temp=setInner(temp);
@@ -1053,19 +749,11 @@ function aggiungiColonna(){
 //PP.D2a
     temp=document.getElementById('PP.D2a').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.D2a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D2a-"+actualYear+"\" onkeyup=\"calculatePPD2("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
-//PP.D2b
-    temp=document.getElementById('PP.D2b').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.D2b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D2b-"+actualYear+"\" onkeyup=\"calculatePPD2("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
-=======
     document.getElementById('PP.D2a').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D2a-"+actualYear+"\" onkeyup=\"calculatePPD2("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
 //PP.D2b
     temp=document.getElementById('PP.D2b').innerHTML;
     temp=setInner(temp);
     document.getElementById('PP.D2b').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D2b-"+actualYear+"\" onkeyup=\"calculatePPD2("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
->>>>>>> riclassificazione-monta
 //PP.DF
 	console.log("ciao");
 	temp=document.getElementById('PP.DF').innerHTML;
@@ -1074,19 +762,11 @@ function aggiungiColonna(){
 //PP.DFa
 	temp=document.getElementById('PP.DFa').innerHTML;
 	temp=setInner(temp);
-<<<<<<< HEAD
-	document.getElementById('PP.DFa').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.DFa-"+actualYear+"\" onkeyup=\"calculatePPDF("+actualYear+")\"></td>";
-//PP.DFb
-temp=document.getElementById('PP.DFb').innerHTML;
-temp=setInner(temp);
-document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.DFb-"+actualYear+"\" onkeyup=\"calculatePPDF("+actualYear+")\"></td>";
-=======
 	document.getElementById('PP.DFa').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.DFa-"+actualYear+"\" onkeyup=\"calculatePPDF("+actualYear+"),calculateDFB2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
 //PP.DFb
 temp=document.getElementById('PP.DFb').innerHTML;
 temp=setInner(temp);
 document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.DFb-"+actualYear+"\" onkeyup=\"calculatePPDF("+actualYear+"),calculateDFB("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
->>>>>>> riclassificazione-monta
 
 //PP.D3
     temp=document.getElementById('PP.D3').innerHTML;
@@ -1095,11 +775,7 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 //PP.D3a
     temp=document.getElementById('PP.D3a').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.D3a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D3a-"+actualYear+"\" onkeyup=\"calculatePPD3("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
-=======
     document.getElementById('PP.D3a').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D3a-"+actualYear+"\" onkeyup=\"calculatePPD3("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFBT("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
->>>>>>> riclassificazione-monta
 //PP.D3b
     temp=document.getElementById('PP.D3b').innerHTML;
     temp=setInner(temp);
@@ -1111,19 +787,11 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 //PP.D4a
     temp=document.getElementById('PP.D4a').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.D4a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D4a-"+actualYear+"\" onkeyup=\"calculatePPD4("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
-//PP.D4b
-    temp=document.getElementById('PP.D4b').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.D4b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D4b-"+actualYear+"\" onkeyup=\"calculatePPD4("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
-=======
     document.getElementById('PP.D4a').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D4a-"+actualYear+"\" onkeyup=\"calculatePPD4("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
 //PP.D4b
     temp=document.getElementById('PP.D4b').innerHTML;
     temp=setInner(temp);
     document.getElementById('PP.D4b').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D4b-"+actualYear+"\" onkeyup=\"calculatePPD4("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
->>>>>>> riclassificazione-monta
 //PP.D5
     temp=document.getElementById('PP.D5').innerHTML;
     temp=setInner(temp);
@@ -1131,19 +799,11 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 //PP.D5a
     temp=document.getElementById('PP.D5a').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.D5a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D5a-"+actualYear+"\" onkeyup=\"calculatePPD5("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
-//PP.D5b
-    temp=document.getElementById('PP.D5b').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.D5b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D5b-"+actualYear+"\" onkeyup=\"calculatePPD5("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
-=======
     document.getElementById('PP.D5a').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D5a-"+actualYear+"\" onkeyup=\"calculatePPD5("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
 //PP.D5b
     temp=document.getElementById('PP.D5b').innerHTML;
     temp=setInner(temp);
     document.getElementById('PP.D5b').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D5b-"+actualYear+"\" onkeyup=\"calculatePPD5("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
->>>>>>> riclassificazione-monta
 //PP.D6
     temp=document.getElementById('PP.D6').innerHTML;
     temp=setInner(temp);
@@ -1151,19 +811,11 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 //PP.D6a
     temp=document.getElementById('PP.D6a').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.D6a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D6a-"+actualYear+"\" onkeyup=\"calculatePPD6("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
-//PP.D6b
-    temp=document.getElementById('PP.D6b').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.D6b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D6b-"+actualYear+"\" onkeyup=\"calculatePPD6("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
-=======
     document.getElementById('PP.D6a').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D6a-"+actualYear+"\" onkeyup=\"calculatePPD6("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateFOR("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
 //PP.D6b
     temp=document.getElementById('PP.D6b').innerHTML;
     temp=setInner(temp);
     document.getElementById('PP.D6b').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D6b-"+actualYear+"\" onkeyup=\"calculatePPD6("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
->>>>>>> riclassificazione-monta
 //PP.D7
     temp=document.getElementById('PP.D7').innerHTML;
     temp=setInner(temp);
@@ -1171,19 +823,11 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 //PP.D7a
     temp=document.getElementById('PP.D7a').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.D7a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D7a-"+actualYear+"\" onkeyup=\"calculatePPD7("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
-//PP.D7b
-    temp=document.getElementById('PP.D7b').innerHTML;
-    temp=setInner(temp);
-    document.getElementById('PP.D7b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D7b-"+actualYear+"\" onkeyup=\"calculatePPD7("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"></td>";
-=======
     document.getElementById('PP.D7a').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D7a-"+actualYear+"\" onkeyup=\"calculatePPD7("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
 //PP.D7b
     temp=document.getElementById('PP.D7b').innerHTML;
     temp=setInner(temp);
     document.getElementById('PP.D7b').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D7b-"+actualYear+"\" onkeyup=\"calculatePPD7("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"></td>";
->>>>>>> riclassificazione-monta
 
     //lavoro angelo:da riga 188 a 262 (Controllare il nome delle funzioni che calcolano E=E,E=B,EF2 dalla riga 258)
 
@@ -1195,20 +839,12 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     //riga 192
     temp=document.getElementById('PP.D8a').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.D8a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D8a-"+actualYear+"\" onkeyup=\"calculatePPD8("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.D8a').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D8a-"+actualYear+"\" onkeyup=\"calculatePPD8("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     //riga 193
     temp=document.getElementById('PP.D8b').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.D8b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D8b-"+actualYear+"\" onkeyup=\"calculatePPD8("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.D8b').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D8b-"+actualYear+"\" onkeyup=\"calculatePPD8("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
 //riga 194
     temp=document.getElementById('PP.D9').innerHTML;
@@ -1218,20 +854,12 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     //riga 195
     temp=document.getElementById('PP.D9a').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.D9a').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D9a-"+actualYear+"\" onkeyup=\"calculatePPD9("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.D9a').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D9a-"+actualYear+"\" onkeyup=\"calculatePPD9("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     //riga 196
     temp=document.getElementById('PP.D9b').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.D9b').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.D9b-"+actualYear+"\" onkeyup=\"calculatePPD9("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.D9b').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.D9b-"+actualYear+"\" onkeyup=\"calculatePPD9("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
 //riga 197
     temp=document.getElementById('PP.DA').innerHTML;
@@ -1241,20 +869,12 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     //riga 198
     temp=document.getElementById('PP.DAa').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.DAa').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.DAa-"+actualYear+"\" onkeyup=\"calculatePPDA("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.DAa').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.DAa-"+actualYear+"\" onkeyup=\"calculatePPDA("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     //riga 199
     temp=document.getElementById('PP.DAb').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.DAb').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.DAb-"+actualYear+"\" onkeyup=\"calculatePPDA("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.DAb').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.DAb-"+actualYear+"\" onkeyup=\"calculatePPDA("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
 //riga 200
     temp=document.getElementById('PP.DB').innerHTML;
@@ -1264,20 +884,12 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     //riga 201
     temp=document.getElementById('PP.DBa').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.DBa').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.DBa-"+actualYear+"\" onkeyup=\"calculatePPDB("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.DBa').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.DBa-"+actualYear+"\" onkeyup=\"calculatePPDB("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     //riga 202
     temp=document.getElementById('PP.DBb').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.DBb').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.DBb-"+actualYear+"\" onkeyup=\"calculatePPDB("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.DBb').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.DBb-"+actualYear+"\" onkeyup=\"calculatePPDB("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
 //riga 203
     temp=document.getElementById('PP.DC').innerHTML;
@@ -1287,20 +899,12 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     //riga 204
     temp=document.getElementById('PP.DCa').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.DCa').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.DCa-"+actualYear+"\" onkeyup=\"calculatePPDC("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.DCa').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.DCa-"+actualYear+"\" onkeyup=\"calculatePPDC("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     //riga 205
     temp=document.getElementById('PP.DCb').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.DCb').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.DCb-"+actualYear+"\" onkeyup=\"calculatePPDC("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.DCb').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.DCb-"+actualYear+"\" onkeyup=\"calculatePPDC("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
 //riga 206
     temp=document.getElementById('PP.DD').innerHTML;
@@ -1310,47 +914,27 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     //riga 207
     temp=document.getElementById('PP.DDa').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.DDa').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.DDa-"+actualYear+"\" onkeyup=\"calculatePPDD("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.DDa').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.DDa-"+actualYear+"\" onkeyup=\"calculatePPDD("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     //riga 208
     temp=document.getElementById('PP.DDb').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.DDb').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.DDb-"+actualYear+"\" onkeyup=\"calculatePPDD("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.DDb').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.DDb-"+actualYear+"\" onkeyup=\"calculatePPDD("+actualYear+"),calculatePPD("+actualYear+"),calculatePP("+actualYear+"),calculateDFB("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
 //riga 209
     temp=document.getElementById('PP.E').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.E').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.E-"+actualYear+"\" onkeyup=\"calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.E').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.E-"+actualYear+"\" onkeyup=\"calculatePP("+actualYear+"),calculateRR2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     //riga 210
     temp=document.getElementById('PP.E1').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.E1').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.E1-"+actualYear+"\" onkeyup=\"calculatePPE("+actualYear+"),calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.E1').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.E1-"+actualYear+"\" onkeyup=\"calculatePPE("+actualYear+"),calculatePP("+actualYear+"),calculateRR2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
     //riga 211
     temp=document.getElementById('PP.E2').innerHTML;
     temp=setInner(temp);
-<<<<<<< HEAD
-    document.getElementById('PP.E2').innerHTML=temp+"<td><input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"PP.E2-"+actualYear+"\" onkeyup=\"calculatePPE("+actualYear+"),calculatePP("+actualYear+")\"> </td>";
-=======
     document.getElementById('PP.E2').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PP.E2-"+actualYear+"\" onkeyup=\"calculatePPE("+actualYear+"),calculatePP("+actualYear+"),calculateRR2("+actualYear+"),calculatePR("+actualYear+"),calculateCCN("+actualYear+"),calculateTF("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 
 //riga 248 CONTO ECONOMICO(da controllare)
     temp=document.getElementById('E').innerHTML;
@@ -1715,11 +1299,7 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 //E.H
 	temp=document.getElementById('E.H').innerHTML;
 	temp=setInner(temp);
-<<<<<<< HEAD
-	document.getElementById('E.H').innerHTML=temp+"<td> <input type=\"text\" style=\"text-align:right\"  value=\"0\" id=\"E.H-"+actualYear+"\"> </td>";
-=======
 	document.getElementById('E.H').innerHTML=temp+"<td> <input type=\"text\" value=\"0\" id=\"E.H-"+actualYear+"\" onkeyup=\"calculateROE("+actualYear+"),calculateROA("+actualYear+")\"> </td>";
->>>>>>> riclassificazione-monta
 //II
    	temp=document.getElementById('II').innerHTML;
    	temp=setInner(temp);
@@ -1787,11 +1367,7 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 //PN
 	temp=document.getElementById('PN').innerHTML;
     	temp=setInner(temp);
-<<<<<<< HEAD
-	document.getElementById('PN').innerHTML=temp+"<td> <input type=\"text\" style=\"text-align:right\"   value=\"0\" id=\"PN-"+actualYear+"\" </td>";
-=======
 	document.getElementById('PN').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"PN-"+actualYear+"\" onkeyup=\"calculateROE("+actualYear+")\</td>";
->>>>>>> riclassificazione-monta
 //FO
 	temp=document.getElementById('FO').innerHTML;
     	temp=setInner(temp);
@@ -1811,9 +1387,6 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 //PMLTPN
 	temp=document.getElementById('PMLTPN').innerHTML;
     	temp=setInner(temp);
-<<<<<<< HEAD
-	document.getElementById('PMLTPN').innerHTML=temp+"<td> <input type=\"text\" style=\"text-align:right\"   value=\"0\" id=\"PMLTPN-"+actualYear+"\" </td>";
-=======
 	document.getElementById('PMLTPN').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"PMLTPN-"+actualYear+"\" </td>";
 //DFBT
 	temp=document.getElementById('DFBT').innerHTML;
@@ -1953,7 +1526,6 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
     temp=document.getElementById('IFN').innerHTML;
     temp=setInner(temp);
     document.getElementById('IFN').innerHTML=temp+"<td> <input type=\"text\"  value=\"0\" id=\"IFN-"+actualYear+"\" </td>";
->>>>>>> riclassificazione-monta
 
 
 }
