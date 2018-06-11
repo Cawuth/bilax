@@ -43,5 +43,19 @@ Tutto PP funziona sintatticamente tranne per l'assenza di calculatePP ENDN
 N_150518_2230_CWT: per oggi ho finito, ho corretto gran parte dei conflitti a fine stato economico, bisognerebbe aggiornarne le funzioni,
 ma lo farò quando correggerò i bug precisi del codice, domani correggo i conflitti con E=B
 
+<<<<<<< HEAD
+N_030618_17_CWT: inizio a lavorare nuovamente
+- risolto il bug di calculatePAC4
+- risolto il bug di calculatePP
+- risolto il bug di calculatePAD
+- aggiunto PP.E tra i valori calcolati in PP
+- ora EBITDA viene aggiunto, ma ha diversi bug da correggere
+- ora viene calcolato EBIT, id ExB
+
+N_040618_1822_CWT:
+- ora somma proventi straordinari, per correggere questo ho dovuto fare anche molte correzioni causate da errori a loro volta causati da
+vecchi problemi di conflitto per colpa degli uguali, quindi il lavoro dei prossimi giorni dovrebbe essere più semplice.
+=======
 N_040618_1742_NSS: d'ora in poi userò questa branch, il mio lavoro e quello di monta sono strettamente collegati, ora modificherò il
 computing.js per mettere i temp degli indici
+>>>>>>> riclassificazione-monta
