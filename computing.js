@@ -4440,7 +4440,7 @@ function calculateLC(anno){
 //riga 418
 function calculateVCCN(anno){
     var CCN1String=document.getElementById('CCN-'+anno).value;
-    var CCN2String=document.getElementById('CCN-'+(anno-1).value;
+    var CCN2String=document.getElementById('CCN-'+(anno-1)).value;
     var CCN1=parseFloat(CCN1String);
     var CCN2=parseFloat(CCN2String);
     var valore;
