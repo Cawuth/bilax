@@ -52,7 +52,7 @@ function aggiungiColonna(){
     //PA
     temp=document.getElementById('PA').innerHTML;
     temp=setInner(temp);
-    document.getElementById('PA').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA-"+actualYear+" onkeyup=\"calculateROA("+actualYear+")\"> </td>";
+    document.getElementById('PA').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA-"+actualYear+" onkeyup=\"calculateROA("+actualYear+")\"> <div id=\"PA-"+actualYear+"-reaction\">X</div> </td>";
 
     //PA.A
     temp=document.getElementById('PA.A').innerHTML;
