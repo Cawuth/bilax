@@ -1534,15 +1534,15 @@ function cambiaColore(par1,par2,par3,par4,id){
 	var reaction_cella=document.getElementById(id+"-reaction");
 	var valore=document.getElementById(id).value;
 	if(valore<par1){
-		reaction_cella.style.background-color="red";
+		reaction_cella.style.backgroundColor="red";
 	}else if(valore<par2){
-		reaction_cella.style.background-color="orange";
+		reaction_cella.style.backgroundColor="orange";
 	}else if(valore<par3){
-		reaction_cella.style.background-color="yellow";
+		reaction_cella.style.backgroundColor="yellow";
 	}else if(valore<par4){
-		reaction_cella.style.background-color="green";
+		reaction_cella.style.backgroundColor="green";
 	}else{
-		reaction_cella.style.background-color="blue";
+		reaction_cella.style.backgroundColor="blue";
 	}
 }
 
