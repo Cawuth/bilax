@@ -1530,6 +1530,22 @@ document.getElementById('PP.DFb').innerHTML=temp+"<td><input type=\"text\" value
 
 }
 
+function cambiaColore(par1,par2,par3,par4,id){
+	var reaction_cella=document.getElementById(id+"-reaction");
+	var valore=document.getElementById(id).value;
+	if(valore<par1){
+		reaction_cella.style.background-color="red";
+	}else if(valore<par2){
+		reaction_cella.style.background-color="orange";
+	}else if(valore<par3){
+		reaction_cella.style.background-color="yellow";
+	}else if(valore<par4){
+		reaction_cella.style.background-color="green";
+	}else{
+		reaction_cella.style.background-color="blue";
+	}
+}
+
 function calculatePA(anno){
     var PAAString=document.getElementById('PA.A-'+anno).value;
     var PABString=document.getElementById('PA.B-'+anno).value;
@@ -1553,6 +1569,7 @@ function calculatePA(anno){
     }
     somma=PAA+PAB+PAC+PAD;
     document.getElementById('PA-'+anno).value=somma;
+	cambiaColore(2,3,4,5,"PA-"+anno);
 }
 
 function calculatePAA(anno){
