@@ -6,3 +6,7 @@ input{
   height:15px;
   width:60px;
 }
+td>div{
+  height:15px;
+  width:30px;
+}
