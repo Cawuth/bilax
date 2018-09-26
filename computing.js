@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by Marco on 18/03/2018.
  */
 
@@ -52,7 +52,7 @@ function aggiungiColonna(){
     //PA
     temp=document.getElementById('PA').innerHTML;
     temp=setInner(temp);
-    document.getElementById('PA').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA-"+actualYear+"\" onkeyup=\"calculateROA("+actualYear+")\"> <div id=\"PA-"+actualYear+"-reaction\">X</div> </td>";
+    document.getElementById('PA').innerHTML=temp+"<td><input type=\"text\" value=\"0\" id=\"PA-"+actualYear+" onkeyup=\"calculateROA("+actualYear+")\"> </td>";
 
     //PA.A
     temp=document.getElementById('PA.A').innerHTML;
@@ -1569,7 +1569,6 @@ function calculatePA(anno){
     }
     somma=PAA+PAB+PAC+PAD;
     document.getElementById('PA-'+anno).value=somma;
-	cambiaColore(2,3,4,5,"PA-"+anno);
 }
 
 function calculatePAA(anno){
@@ -4284,6 +4283,7 @@ function calculateROE(anno){
     }
     else valore=EH/PN;
     document.getElementById('ROE-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'ROE-'+anno);
 }
 //riga 387
 function calculateROA(anno){
@@ -4300,6 +4300,7 @@ function calculateROA(anno){
     }
 	else valore=EH/PA;
     document.getElementById('ROA-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'ROA-'+anno);
 }
 //riga 390
 function calculateROI(anno){
@@ -4316,6 +4317,7 @@ function calculateROI(anno){
     }
 	else valore=EB/CI;
     document.getElementById('ROI-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'ROI-'+anno);
 }
 //riga 393
 function calculateROS(anno){
@@ -4332,6 +4334,7 @@ function calculateROS(anno){
     }
 	else valore=EB/EA1;
     document.getElementById('ROS-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'ROS-'+anno);
 }
 //riga 398
 function calculateTRN(anno){
@@ -4348,6 +4351,7 @@ function calculateTRN(anno){
     }
 	else valore=EA1/CI;
     document.getElementById('TRN-'+anno).value=valore;
+		cambiaColore(2,3,4,5,'TRN-'+anno);
 }
 //riga 403
 function calculateLAT(anno){
@@ -4369,6 +4373,7 @@ function calculateLAT(anno){
     }
     else valore=(AC-R)/PR;
     document.getElementById('LAT-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'LAT-'+anno);
 }
 //riga 407
 function calculateMPT(anno){
@@ -4385,6 +4390,7 @@ function calculateMPT(anno){
     }
     valore=LI-PR;
     document.getElementById('MPT-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'MPT-'+anno);
 }
 //riga 408
 function calculateMST(anno){
@@ -4406,6 +4412,7 @@ function calculateMST(anno){
     }
     valore=AC-R-PR;
     document.getElementById('MST-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'MST-'+anno);
 }
 //riga 409
 function calculateMD(anno){
@@ -4437,6 +4444,7 @@ function calculateMD(anno){
     }
     valore=R+CRE+C+LI-PR;
     document.getElementById('MD-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'MD-'+anno);
 }
 //riga 414
 function calculateLC(anno){
@@ -4453,6 +4461,7 @@ function calculateLC(anno){
     }
     else valore=AC/PR;
     document.getElementById('LC-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'LC-'+anno);
 }
 //riga 418
 function calculateVCCN(anno){
@@ -4469,6 +4478,7 @@ function calculateVCCN(anno){
     }
     valore=CCN1-CCN2;
     document.getElementById('VCCN-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'VCCN-'+anno);
 }
 //riga 420
 function calculateIIC(anno){
@@ -4485,6 +4495,7 @@ function calculateIIC(anno){
     }
     else valore=C/EA1*365/1.22;
     document.getElementById('IIC-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'IIC-'+anno);
 }
 //riga 423
 function calculateGCM(anno){
@@ -4501,6 +4512,7 @@ function calculateGCM(anno){
     }
     else valore=R/EA1*365;
     document.getElementById('LC-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'LC-'+anno);
 }
 //riga 426
 function calculateIPF(anno){
@@ -4530,6 +4542,7 @@ function calculateIPF(anno){
     }
     else valore=F/(EB1+EB2+EB3)*365/1.22;
     document.getElementById('IPF-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'IPF-'+anno);
 }
 //riga 429
 function calculateCDC(anno){
@@ -4551,6 +4564,7 @@ function calculateCDC(anno){
     }
     valore=IIC+GCM-IPF;
     document.getElementById('CDC-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'CDC-'+anno);
 }
 //riga 433
 function calculateRM(anno) {
@@ -4567,6 +4581,7 @@ function calculateRM(anno) {
     }
     else valore=EA1/R;
     document.getElementById('RM-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'RM-'+anno);
 }
 //riga 437
 function calculateLTACP(anno) {
@@ -4583,6 +4598,7 @@ function calculateLTACP(anno) {
     }
     else valore=CI/PN;
     document.getElementById('LTACP-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'LTACP-'+anno);
 }
 //riga 441 o riga 444 CALCOLANO LA STESSA COSA (POSSIBILE ERRORE NEL BILANCIO)
 function calculateGDC(anno) {
@@ -4607,6 +4623,7 @@ function calculateGDC(anno) {
     }
     else valore=PN/(MLT+BT);
     document.getElementById('GDC-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'GDC-'+anno);
 }
 //riga 448
 function calculateIND(anno) {
@@ -4638,6 +4655,7 @@ function calculateIND(anno) {
     }
     else valore=(BT+MLT+DNFE+DNFO)/CI;
     document.getElementById('IND-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'IND-'+anno);
 }
 //riga 451
 function calculateQDI(anno) {
@@ -4654,6 +4672,7 @@ function calculateQDI(anno) {
     }
     else valore=(CI-PN)/PN;
     document.getElementById('QDI-'+anno).value=valore;
+	cambiaColore(2,3,4,5,'QDI-'+anno);
 }
 //riga 452
 function calculateIFN(anno) {
@@ -4680,4 +4699,453 @@ function calculateIFN(anno) {
     }
     else valore=(BT+MLT-LI)/PN;
     document.getElementById('IFN-'+anno).value;
+	cambiaColore(2,3,4,5,'IFN-'+anno);
 }
+//dalla riga 455 ALLA 521
+//MANCA RIGA 518 INT=INTERINALE
+//MANCA CODICE VARIAZIONI DA 496 A 503
+
+//riga 455 PS.CI=PS/CI
+function calculatePSCI(anno){
+    var MLTString=document.getElementById('MLT-'+anno).value;
+    var CIString=document.getElementById('CI-'+anno).value;
+    var MLT=parseFloat(MLTString);
+    var CI=parseFloat(CIString);
+    var divisione;
+    if(isNaN(MLT)){
+        MLT=0;
+    }
+    if(isNaN(CI)||CI==0){
+        divisione=999999999;
+    }
+    else divisione=MLT/CI;
+    document.getElementById('PS.CI-'+anno).value=divisione;
+	cambiaColore(2,3,4,5,'PS.CI-'+anno);
+}
+
+//riga 458 PR.CI=PR/CI
+function calculatePRCI(anno){
+    var BTString=document.getElementById('BT-'+anno).value;
+    var CIString=document.getElementById('CI-'+anno).value;
+    var BT=parseFloat(BTString);
+    var CI=parseFloat(CItring);
+    var divisione;
+    if(isNaN(BT)){
+        BT=0;
+    }
+    if(isNaN(CI)||CI==0){
+        divisione=999999999;
+    }
+    else divisione=BT/CI;
+    document.getElementById('PR.CI-'+anno).value=divisione;
+	cambiaColore(2,3,4,5,'PR.CI-'+anno);
+}
+
+//riga 465 EBITDA.VALPROD=EBITDA / Valore Produzione
+function calculateEBITDAVALPROD(anno){
+    var EBITDAString=document.getElementById('EBITDA-'+anno).value;
+    var EAString=document.getElementById('E.A-'+anno).value;
+    var EBITDA=parseFloat(EBITDAString);
+    var EA=parseFloat(EAtring);
+    var divisione;
+    if(isNaN(EBITDA)){
+        EBITDA=0;
+    }
+    if(isNaN(EA)||EA==0){
+        divisione=999999999;
+    }
+    else divisione=EBITDA/EA;
+    document.getElementById('EBITDA.VALPROD-'+anno).value=divisione;
+	cambiaColore(2,3,4,5,'EBITDA.VALPROD-'+anno);
+}
+
+//RIGA 466 EBITVALPROD=EBIT / Valore Produzione
+function calculateEBITVALPROD(anno){
+        var ExBString=document.getElementById('ExB-'+anno).value;
+        var EB6String=document.getElementById('E.B6-'+anno).value;
+        var EAString=document.getElementById('E.A-'+anno).value;
+        var ExB=parseFloat(ExBString);
+        var EB6=parseFloat(EB6String);
+        var EA=parseFloat(EAString);
+        var risultato;
+        if(isNaN(ExB)){
+            ExB=0;
+        }
+        if(isNaN(EB6)){
+            EB6=0;
+        }
+        if(isNaN(EA)){
+            EA=0;
+        }
+        if (EA-EB6==0) {
+            risultato=999999999;
+        } 
+        else risultato=ExB/(EA-EB6);
+        document.getElementById('EBIT.VALPROD-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'EBIT.VALPROD-'+anno);
+}
+
+//RIGA 467 EBITDAOF=EBITDA/OF
+function calculateEBITDAOF(anno){
+        var EBITDAString=document.getElementById('EBITDA-'+anno).value;
+        var EC3String=document.getElementById('E.C3-'+anno).value;
+        var EBITDA=parseFloat(EBITDAString);
+        var EC3=parseFloat(EC3String);
+        var risultato;
+        if(isNaN(EBITDA)){
+            EBITDA=0;
+        }
+        if(isNaN(EC3)||EC3==0){
+            risultato=999999999;
+        }
+        else risultato=EBITDA/EC3;
+        document.getElementById('EBITDA.OF-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'EBITDA.OF-'+anno);
+}
+
+//RIGA 470 EBITOF=EBIT/OF
+function calculateEBITOF(anno){
+        var ExBString=document.getElementById('ExB-'+anno).value;
+        var EC3String=document.getElementById('E.C3-'+anno).value;
+        var ExB=parseFloat(ExBString);
+        var EC3=parseFloat(EC3String);
+        var risultato;
+        if(isNaN(ExB)){
+            ExB=0;
+        }
+        if(isNaN(EC3)||EC3==0){
+            risultato=999999999;
+        }
+        else risultato=ExB/EC3;
+        document.getElementById('EBIT.OF-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'EBIT.OF-'+anno);
+}
+//RIGA 474 COSTODEBITOFIN=Costo del debito finanziario
+function calculateCOSTODEBITOFIN(anno){
+        var BTString=document.getElementById('DFBT-'+anno).value;
+        var MLTString=document.getElementById('MLT-'+anno).value;
+        var EC3String=document.getElementById('E.C3-'+anno).value;
+        var BT=parseFloat(BTString);
+        var MLT=parseFloat(MLTString);
+        var EC3=parseFloat(EC3String);
+        var risultato;
+        if(isNaN(BT)){
+            BT=0;
+        }
+        if(isNaN(MLT)){
+            MLT=0;
+        }
+        if(isNaN(EC3)){
+            EC3=0;
+        }
+        if(BT+MLT==0) {
+            risultato=999999999;
+        } 
+        else risultato=EC3/(BT+MLT);
+        document.getElementById('COSTO.DEBITOFIN-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'COSTO.DEBITOFIN-'+anno);
+}
+//RIGA 478 PN.IMM=PN-IMM
+function calculatePNIMM(anno){
+        var PNString=document.getElementById('PN-'+anno).value;
+        var IMMString=document.getElementById('IMM-'+anno).value;
+        var PN=parseFloat(PNString);
+        var IMM=parseFloat(IMMString);
+        var risultato;
+        if(isNaN(PN)){
+            PN=0;
+        }
+        if(isNaN(IMM)){
+            IMM=0;
+        }
+        risultato=PN-IMM;
+        document.getElementById('PN.IMM-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'PN.IMM-'+anno);
+}
+//RIGA 480 PN.CI=PN/CI
+function calculatePNCI(anno){
+        var PNString=document.getElementById('PN-'+anno).value;
+        var IMMString=document.getElementById('IMM-'+anno).value;
+        var PN=parseFloat(PNString);
+        var IMM=parseFloat(IMMString);
+        var risultato;
+        if(isNaN(PN)){
+            PN=0;
+        }
+        if(isNaN(IMM)||IMM==0){
+            risultato=999999999;
+        }
+        else risultato=PN/IMM;
+        document.getElementById('PN.CI-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'PN.CI-'+anno);
+}
+//RIGA 485 MSS=MARGINE SECONDARIO DI STRUTTURA=PMLT+PN-IMM
+function calculateMSS(anno){
+        var PMLTPNString=document.getElementById('PMLTPN-'+anno).value;
+        var IMMString=document.getElementById('IMM-'+anno).value;
+        var PMLTPN=parseFloat(PMLTPNString);
+        var IMM=parseFloat(IMMString);
+        var risultato;
+        if(isNaN(PMLTPN)){
+            PMLTPN=0;
+        }
+        if(isNaN(IMM)){
+            IMM=0;
+        }
+        risultato=PMLTPN-IMM;
+        document.getElementById('MSS-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'MSS-'+anno);
+}
+//RIGA 487 ISS=INDICE SECONDARIO DI STRUTTURA=(MLT+PN)/CI
+function calculateISS(anno){
+        var CIString=document.getElementById('CI-'+anno).value;
+        var PNString=document.getElementById('PN-'+anno).value;
+        var MLTString=document.getElementById('MLT-'+anno).value;
+        var CI=parseFloat(CIString);
+        var PN=parseFloat(PNString);
+        var MLT=parseFloat(MLTString);
+        var risultato;
+        if(isNaN(PN)){
+            PN=0;
+        }
+        if(isNaN(MLT)){
+            MLT=0;
+        }
+        if(isNaN(CI)||CI==0){
+            risultato=999999999;
+        }
+        else risultato=(PN+MLT)/CI;
+        document.getElementById('ISS-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'ISS-'+anno);
+}
+//RIGA 492 QSS=QUOZIENTE SECONDARIO DI STRUTTURA
+function calculateQSS(anno){
+        var PMLTPNString=document.getElementById('PMLTPN-'+anno).value;
+        var IMMString=document.getElementById('IMM-'+anno).value;
+        var PMLTPN=parseFloat(PMLTPNString);
+        var IMM=parseFloat(IMMString);
+        var risultato;
+        if(isNaN(PMLTPN)){
+            PMLTPN=0;
+        }
+        if(isNaN(IMM)||IMM==0){
+            risultato=999999999;
+        }
+        else risultato=PMLTPN/IMM;
+        document.getElementById('QSS-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'QSS-'+anno);
+}
+//RIGA 494 CAI=COPERTURA ATT. IMMOBILIZZ.
+function calculateCAI(anno){
+        var PNString=document.getElementById('PN-'+anno).value;
+        var MLTString=document.getElementById('MLT-'+anno).value;
+        var IMMString=document.getElementById('IMM-'+anno).value;
+        var PN=parseFloat(PNString);
+        var MLT=parseFloat(MLTString);
+        var IMM=parseFloat(IMMString);
+        var risultato;
+        if(isNaN(PN)){
+            PN=0;
+        }
+        if(isNaN(MLT)){
+            MLT=0;
+        }
+        if(isNaN(IMM)||IMM==0){
+            risultato=999999999;
+        }
+        else risultato=(PN+MLT)/IMM;
+        document.getElementById('CAI-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'CAI-'+anno);
+}
+//MANCA CODICE VARIAZIONI DA 496 A 503
+function calculateVARRIC(anno) {
+    var EB1StringAnno=document.getElementById('E.B1-'+anno).value;
+    var EB1StringAnnoPrec=document.getElementById('E.B1-'+(anno-1)).value;
+    var EB1Anno=parseFloat(EB1StringAnno);
+    var EB1AnnoPrec=parseFloat(EB1StringAnnoPrec);
+    var risultato;
+    if(isNaN(EB1Anno)) {
+        EB1Anno=0;
+    }
+    if(isNaN(EB1AnnoPrec)||EB1AnnoPrec==0) {
+        risultato=999999999;
+    }
+    else risultato=EB1Anno/EB1AnnoPrec-1;
+    document.getElementById('VARRIC-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'VARRIC-'+anno);
+}
+function calculateVARCCN(anno) {
+    var CCNStringAnno=document.getElementById('CCN-'+anno).value;
+    var CCNStringAnnoPrec=document.getElementById('CCN-'+(anno-1)).value;
+    var CCNAnno=parseFloat(CCNStringAnno);
+    var CCNAnnoPrec=parseFloat(CCNStringAnnoPrec);
+    var risultato;
+    if(isNaN(CCNAnno)) {
+        CCNAnno=0;
+    }
+    if(isNaN(CCNAnnoPrec)||CCNAnnoPrec==0) {
+        risultato=999999999;
+    }
+    else risultato=CCNAnno/CCNAnnoPrec-1;
+    document.getElementById('VARCCN-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'VARCCN-'+anno);
+}
+
+//MANCA RIGA 498!!!!!!!!!!!!!!!!
+
+function calculateVARVA(anno) {
+    var MLStringAnno=document.getElementById('ML-'+anno).value;
+    var MLStringAnnoPrec=document.getElementById('ML-'+(anno-1)).value;
+    var MLAnno=parseFloat(MLStringAnno);
+    var MLAnnoPrec=parseFloat(MLStringAnnoPrec);
+    var risultato;
+    if(isNaN(MLAnno)) {
+        MLAnno=0;
+    }
+    if(isNaN(MLAnnoPrec)||MLAnnoPrec==0) {
+        risultato=999999999;
+    }
+    else risultato=MLAnno/MLAnnoPrec-1;
+    document.getElementById('VARVA-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'VARVA-'+anno);
+}
+function calculateVARRO(anno) {
+    var ExBStringAnno=document.getElementById('ExB-'+anno).value;
+    var ExBStringAnnoPrec=document.getElementById('ExB-'+(anno-1)).value;
+    var ExBAnno=parseFloat(ExBStringAnno);
+    var ExBAnnoPrec=parseFloat(ExBStringAnnoPrec);
+    var risultato;
+    if(isNaN(ExBAnno)) {
+        ExBAnno=0;
+    }
+    if(isNaN(ExBAnnoPrec)||ExBAnnoPrec==0) {
+        risultato=999999999;
+    }
+    else risultato=ExBAnno/ExBAnnoPrec-1;
+    document.getElementById('VARRO-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'VARRO-'+anno);
+}
+function calculateVARAN(anno) {
+    var CIStringAnno=document.getElementById('CI-'+anno).value;
+    var CIStringAnnoPrec=document.getElementById('CI-'+(anno-1)).value;
+    var CIAnno=parseFloat(CIStringAnno);
+    var CIAnnoPrec=parseFloat(CIStringAnnoPrec);
+    var risultato;
+    if(isNaN(CIAnno)) {
+        CIAnno=0;
+    }
+    if(isNaN(CIAnnoPrec)||CIAnnoPrec==0) {
+        risultato=999999999;
+    }
+    else risultato=CIAnno/CIAnnoPrec-1;
+    document.getElementById('VARAN-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'VARAN-'+anno);
+}
+function calculateVARAC(anno) {
+    var ACStringAnno=document.getElementById('AC-'+anno).value;
+    var ACStringAnnoPrec=document.getElementById('AC-'+(anno-1)).value;
+    var ACAnno=parseFloat(ACStringAnno);
+    var ACAnnoPrec=parseFloat(ACStringAnnoPrec);
+    var risultato;
+    if(isNaN(ACAnno)) {
+        ACAnno=0;
+    }
+    if(isNaN(ACAnnoPrec)||ACAnnoPrec==0) {
+        risultato=999999999;
+    }
+    else risultato=ACAnno/ACAnnoPrec-1;
+    document.getElementById('VARAC-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'VARAC-'+anno);
+}
+function calculateVARFAC(anno) {
+    var VARACString=document.getElementById('VARAC-'+anno).value;
+    var VARRICString=document.getElementById('VARRIC-'+anno).value;
+    var VARAC=parseFloat(VARACString);
+    var VARRIC=parseFloat(VARRICString);
+    var risultato;
+    if(isNaN(VARRIC)) {
+        VARRIC=0;
+    }
+    if(isNaN(VARAC)||VARRAC==0) {
+        risultato=999999999;
+    }
+    else risultato=VARRIC/VARAC-1;
+    document.getElementById('VARFAC-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'VARFAC-'+anno);
+}
+
+//RIGA 504 BOH????
+
+//RIGA 510 RCI=Rigidità del capitale investito
+function calculateRCI(anno){
+    var IMMString=document.getElementById('IMM-'+anno).value;
+    var CIString=document.getElementById('CI-'+anno).value;
+    var IMM=parseFloat(IMMString);
+    var CI=parseFloat(CIString);
+    var risultato;
+    if(isNaN(IMM)){
+        IMM=0;
+    }
+    if(isNaN(CI)||CI==0){
+        risultato=999999999;
+    }
+    else risultato=IMM/CI;
+    document.getElementById('RCI-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'RCI-'+anno);
+}
+//RIGA 513 ECI=Elasticità del capitale investito e AC=ATTIVITA CORRENTI
+function calculateECI(anno){
+    var ACString=document.getElementById('AC-'+anno).value;
+    var CIString=document.getElementById('CI-'+anno).value;
+    var AC=parseFloat(ACString);
+    var CI=parseFloat(CIString);
+    var risultato;
+    if(isNaN(AC)){
+        AC=0;
+    }
+    if(isNaN(CI)||CI==0){
+        risultato=999999999;
+    }
+    else risultato=AC/CI;
+    document.getElementById('ECI-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'ECI-'+anno);
+}
+//MANCA RIGA 518 INT=INTERINALE
+
+//RIGA 519 PER.INT=Personale + Interinale
+/*function calculatePERINT(anno){
+        var INTString=document.getElementById('INT-'+anno).value;
+        var EB4String=document.getElementById('E.B4-'+anno).value;
+        var INT=parseFloat(INTString);
+        var EB4=parseFloat(EB4String);
+        var risultato;
+        if(isNaN(INT)){
+        INT=0;
+        }
+        if(isNaN(EB4)){
+        EB4=0;
+        }
+        risultato=INT+EB4;
+        document.getElementById('PER.INT-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'PER.INT-'+anno);
+}
+
+//RIGA 521 PRO=PRODUTTIVITA'
+function calculatePRO(anno){
+        var PERINTString=document.getElementById('PER.INT-'+anno).value;
+        var EAString=document.getElementById('E.A-'+anno).value;
+        var PERINT=parseFloat(PERINTString);
+        var EA=parseFloat(EAString);
+        var risultato;
+        console.log(PERINT);
+        console.log(EA);
+        if(isNaN(PERINT)){
+        PERINT=0;
+        }
+        if(isNaN(EA)){
+        EA=0;
+        }
+        risultato=PERINT/EA;
+        document.getElementById('PRO-'+anno).value=risultato;
+	cambiaColore(2,3,4,5,'PRO-'+anno);
+}*/
