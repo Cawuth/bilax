@@ -1,0 +1,61 @@
+Legenda: N lo usiamo per indicare le note
+Esempio: N_150518_2125_CWT è una nota del 15 maggio 2018 alle 21:25 fatta da Cawuth (usate alcune lettere per identificarvi)
+
+- controllo errori sintassi
+- aggiunta cose tolte precedentemente
+- correzione con la riga 274 di bellentani
+- correzione alla fine con il conflitto di id
+- correzione bug mandati da lista di bellentani
+SE SI HA TEMPO
+- controllo bug personale
+
+NOTE
+1. in tutto PA non ci sono errori di sintassi
+2. Manca calculatePP
+3. Errore RISOLTO
+
+computing.js:2367 Uncaught TypeError: Cannot read property 'value' of null
+    at calculatePPD (computing.js:2367)
+    at HTMLInputElement.onkeyup (index.html:1)
+calculatePPD	@	computing.js:2367
+onkeyup	@	index.html:1
+
+Quando si posiziona un valore in PP.D1
+
+Note: errore causato dall'assenza di PP.D10
+L'errore probabilmente è causato dal fatto che PP.D è la somma di 14 elementi, ma al posto di PP.D10 viene usato PP.A
+
+Correzioni:
+Correggo cambiando PP.D10,...,PP.D14 con PP.DA,...PP.DD in calculatePPD
+
+Altre errore:
+Notare la presenza di PP.DF tra PP.D2 e PP.D3
+
+4. Manca PP.DF nel codice
+
+Nota_CWT: fino a PP.D5b va tutto bene tranne per l'inesistenza di PP.D5
+N_150518_2125_CWT: in realtà a quanto pare non capisco cosa si intenda per inesistenza di PP.D5 perché sembra andare tutto, quindi passerò oltre
+Manca sempre calculatePP
+Con PP.D7 e sottocelle manda output a caso sulla console ma funziona, non lo fa coi precedenti
+Errore, lo fa anche con PP.D8 quindi sarà qualcosa a che fare con calculatePPD secondo me
+Tutto PP funziona sintatticamente tranne per l'assenza di calculatePP ENDN
+
+N_150518_2230_CWT: per oggi ho finito, ho corretto gran parte dei conflitti a fine stato economico, bisognerebbe aggiornarne le funzioni,
+ma lo farò quando correggerò i bug precisi del codice, domani correggo i conflitti con E=B
+
+<<<<<<< HEAD
+N_030618_17_CWT: inizio a lavorare nuovamente
+- risolto il bug di calculatePAC4
+- risolto il bug di calculatePP
+- risolto il bug di calculatePAD
+- aggiunto PP.E tra i valori calcolati in PP
+- ora EBITDA viene aggiunto, ma ha diversi bug da correggere
+- ora viene calcolato EBIT, id ExB
+
+N_040618_1822_CWT:
+- ora somma proventi straordinari, per correggere questo ho dovuto fare anche molte correzioni causate da errori a loro volta causati da
+vecchi problemi di conflitto per colpa degli uguali, quindi il lavoro dei prossimi giorni dovrebbe essere più semplice.
+=======
+N_040618_1742_NSS: d'ora in poi userò questa branch, il mio lavoro e quello di monta sono strettamente collegati, ora modificherò il
+computing.js per mettere i temp degli indici
+>>>>>>> riclassificazione-monta
