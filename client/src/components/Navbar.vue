@@ -48,7 +48,7 @@
           { title: 'I miei bilanci', icon: 'view_headline', route: '/mybilaxs'},
           { title: 'Bilancio corrente', icon: 'euro_symbol', route: '/bilax'},
           { title: 'Analisi finanziaria', icon: 'insert_chart', route: '/analisis'},
-          { title: 'Impostazioni', icon: 'settings', route: '/about' }
+          { title: 'Settings', icon: 'settings', route: '/about' }
         ],
         mini: true,
         right: null

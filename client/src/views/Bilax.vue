@@ -1,5 +1,12 @@
 <template>
-  <div>
-    <h1>This is Bilax page</h1>
-  </div>
+  <BilaxForm></BilaxForm>
 </template>
+
+<script>
+import BilaxForm from '../components/BilaxForm.vue'
+export default {
+  components: {
+    BilaxForm
+  }
+}
+</script>
