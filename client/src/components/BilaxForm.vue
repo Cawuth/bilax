@@ -13,15 +13,12 @@
       <template slot="items" slot-scope="props">
         <td>{{ props.item.desc }}</td>
         <td>{{ props.item.cod }}</td>
-        <td v-for="y in props.item.year" :key="y.anno">
-          <v-text-field v-model.number="y.value" aria-placeholder="0" type="number"></v-text-field>
+        <td v-for="v in props.item.values" :key="v.anno">
+          <v-text-field v-model.number="v.value" aria-placeholder="0" type="number" @keyup="master(v.anno, props.item.cod)"></v-text-field>
         </td>
         
       </template>
     </v-data-table>
-    <v-text-field v-model.number="a"></v-text-field>
-    <v-text-field v-model.number="b"></v-text-field>
-    <v-text-field v-model.number="s"></v-text-field>
   </v-flex>
   
 </template>
@@ -47,53 +44,61 @@ export default {
           value: "cod",
         },
         {
-          text: "2018",
+          text: "2019",
           align: "left",
           sortable: false,
           value: "numero",
         }
       ],
       row: [
-        { desc: "STATO PATRIMONIALE ATTIVO", cod: "PA"},
-        { desc: "A) Crediti verso soci per versamenti ancora dovuti", cod: "PA.A"},
-        { desc: "    Crediti verso soci già richiamati", cod: "PA.A1"},
-        { desc: "    Crediti verso soci non ancora richiamati", cod: "PA.A2"},
-      ],
-      a: 0,
-      b: 0
+        { desc: "STATO PATRIMONIALE ATTIVO", cod: "PA", values: [{anno: 2019, value: 0}]},
+        { desc: "A) Crediti verso soci per versamenti ancora dovuti", cod: "PA.A", values: [{anno: 2019, value: 0}]},
+        { desc: "    Crediti verso soci già richiamati", cod: "PA.A1", values: [{anno: 2019, value: 0}]},
+        { desc: "    Crediti verso soci non ancora richiamati", cod: "PA.A2", values: [{anno: 2019, value: 0}]}
+      ]
     };
   },
   computed: {
-    s() {
-      return this.a + this.b;
-    },
-    years() {
-      return [
-        [{anno: "2018", value: PA},]
-      ];
-    }
-  },
-  watch: {
-    s() {
-      this.s = this.a + this.b;
-    },
-    row() {
-      for (let i = 0; i < this.row[0].year.length; i++) {
-        this.row[1].year[i].value = this.row[2].year[i].value + this.row[3].year[i].value;
-      }
-    }
     
   },
   methods: {
     addCol() {
-      let len = this.years[0].length;
-      let temp = this.years[0][len-1].anno;
-      this.headers.push({text: temp-1,
+      let len = this.headers.length;
+      let last_year = parseInt(this.headers[len - 1].text);
+      this.headers.push({text: last_year-1,
           align: "left",
           sortable: false})
-      for(let r of this.years) {
-        r.push({anno: temp - 1 , value: 0});
+      for(let r of this.row) {
+        r.values.push({anno: last_year-1, value: 0});
       }
+    },
+    master(anno, cod) {
+      switch(cod) {
+        case 'PA.A':
+          this.startPAA(anno);
+          break;
+        case 'PA.A1':
+          this.startPAA1(anno);
+          break;
+        case 'PA.A2':
+          this.startPAA2(anno);
+          break;
+      }
+    },
+    startPAA1(anno) {
+      this.calculatePAA(anno);
+    },
+    startPAA2(anno) {
+      this.calculatePAA(anno);
+    },
+    calculatePAA(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[1].values[index_anno].value = this.row[2].values[index_anno].value + this.row[3].values[index_anno].value;
+      this.calculatePA(anno);
+    },
+    calculatePA(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[0].values[index_anno].value = this.row[1].values[index_anno].value;
     }
   } 
 }
