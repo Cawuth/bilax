@@ -1,23 +1,36 @@
 <template>
   <v-flex>
+    <v-card-title>
     <v-btn fab dark color="indigo">
         <v-icon  @click="addCol" dark>add</v-icon>
     </v-btn>
-    
+    <v-spacer></v-spacer>
+    <v-text-field
+          v-model="search"
+          append-icon="search"
+          label="Search"
+          single-line
+          hide-details
+    ></v-text-field>
+    </v-card-title>
     <v-data-table
       :headers="headers"
       :items="row"
       class="elevation-1"
+      :search="search"
       hide-actions
     >
       <template slot="items" slot-scope="props">
         <td>{{ props.item.desc }}</td>
         <td>{{ props.item.cod }}</td>
         <td v-for="v in props.item.values" :key="v.anno">
-          <v-text-field v-model.number="v.value" aria-placeholder="0" type="number" @keyup="master(v.anno, props.item.cod)"></v-text-field>
+          <v-text-field v-model.number="v.value" reverse type="number" @change="master(v.anno, props.item.cod)"></v-text-field>
         </td>
-        
+
       </template>
+      <v-alert slot="no-results" :value="true" color="error" icon="warning">
+          La ricerca per "{{ search }}" non ha prodotto risultati.
+      </v-alert>
     </v-data-table>
   </v-flex>
   
@@ -30,6 +43,7 @@ export default {
   name: "BilaxForm",
   data() {
     return {
+      search: '',
       headers: [
         {
           text: "Descrizione",
