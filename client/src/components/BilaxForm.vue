@@ -142,6 +142,7 @@ export default {
         { desc: "        2) verso imprese controllate", cod: "PA.C22", values: [{anno: 2019, value: 0}]},
         { desc: "                - entro 12 mesi", cod: "PA.C22a", values: [{anno: 2019, value: 0}]},
         { desc: "                - oltre 12 mesi", cod: "PA.C22b", values: [{anno: 2019, value: 0}]},
+        { desc: "        3) verso imprese collegate", cod: "PA.C23", values: [{anno: 2019, value: 0}]},
         { desc: "           - entro 12 mesi", cod: "PA.C23a", values: [{anno: 2019, value: 0}]},
         { desc: "           - oltre 12 mesi", cod: "PA.C23b", values: [{anno: 2019, value: 0}]},
         { desc: "       4) verso controllanti", cod: "PA.C24", values: [{anno: 2019, value: 0}]},
@@ -418,7 +419,125 @@ export default {
       PA:0,
       PAA:1,
       PAA1:2,
-      PAA2:3
+      PAA2:3,
+      PAB: 4,
+      PAB1: 5,
+      PAB11: 6,
+      PAB11A: 7,
+      PAB11B: 8,
+      PAB11C: 9,
+      PAB12: 10,
+      PAB12A: 11,
+      PAB12B: 12,
+      PAB12C: 13,
+      PAB13: 14,
+      PAB13A: 15,
+      PAB13B: 16,
+      PAB13C: 17,
+      PAB14: 18,
+      PAB14A: 19,
+      PAB14B: 20,
+      PAB14C: 21,
+      PAB18: 22,
+      PAB15: 23,
+      PAB15A: 24,
+      PAB15B: 25,
+      PAB15C: 26,
+      PAB16: 27,
+      PAB17: 28,
+      PAB17A: 29,
+      PAB17B: 30,
+      PAB17C: 31,
+      PAB2:32,
+      PAB21:33,
+      PAB21A:34,
+      PAB21B:35,
+      PAB21C:36,
+      PAB22:37,
+      PAB22A: 38,
+      PAB22B: 39,
+      PAB22C: 40,
+      PAB23: 41,
+      PAB23A: 42,
+      PAB23B: 43,
+      PAB23C: 44,
+      PAB24: 45,
+      PAB24A: 46,
+      PAB24B: 47,
+      PAB24C: 48,
+      PAB25: 49,
+      PAB26: 50,
+      PAB26A: 51,
+      PAB26B: 52,
+      PAB26C: 53,
+      PAB3: 54,
+      PAB31: 55,
+      PAB31A: 56,
+      PAB31B: 57,
+      PAB31C: 58,
+      PAB31D: 59,
+      PAB32: 60,
+      PAB32A: 61,
+      PAB32A1: 62,
+      PAB32A2: 63,
+      PAB32B: 64,
+      PAB32B1: 65,
+      PAB32B2: 66,
+      PAB32C: 67,
+      PAB32C1:68,
+      PAB32C2:69,
+      PAB32D:70,
+      PAB32D1:71,
+      PAB32D2:72,
+      PAB33:73,
+      PAB34:74,
+      PAB34A:75,
+      PAB34B:76,
+      PAC:77,
+      PAC1:78,
+      PAC11:79,
+      PAC12:80,
+      PAC13:81,
+      PAC14:82,
+      PAC15:83,
+      PAC2:84,
+      PAC21:85,
+      PAC21A:86,
+      PAC21B:87,
+      PAC22:88,
+      PAC22A:89,
+      PAC22B:90,
+      PAC23:91,
+      PAC23A:92,
+      PAC23B:93,
+      PAC24:94,
+      PAC24A:95,
+      PAC24B:96,
+      PAC2B:97,
+      PAC2BA:98,
+      PAC2BB:99,
+      PAC2T:100,
+      PAC2TA:101,
+      PAC2TB:102,
+      PAC25:103,
+      PAC25A:104,
+      PAC25B:105,
+      PAC3:106,
+      PAC31:107,
+      PAC32:108,
+      PAC33:109,
+      PAC34:110,
+      PAC35:111,
+      PAC35A:112,
+      PAC35B:113,
+      PAC36:114,
+      PAC4:115,
+      PAC41:116,
+      PAC42:117,
+      PAC43:118,
+      PAD:119,
+      PAD1:120,
+      PAD2:121
     };
   },
   computed: {
@@ -449,6 +568,360 @@ export default {
         case 'PA.A2':
           this.startPAA2(anno);
           break;
+        case 'PA.B':
+          this.startPAB(anno);
+          break;
+        case 'PA.B1':
+          this.startPAB1(anno);
+          break;
+        case 'PA.B11':
+          this.startPAB11(anno);
+          break;
+        case 'PA.B11a':
+          this.startPAB11a(anno);
+          break;
+        case 'PA.B11b':
+          this.startPAB11b(anno);
+          break;
+        case 'PA.B11c':
+          this.startPAB11c(anno);
+          break;
+        case 'PA.B12':
+          this.startPAB12(anno);
+          break;
+        case 'PA.B12a':
+          this.startPAB12a(anno);
+          break;
+        case 'PA.B12b':
+          this.startPAB12b(anno);
+          break;
+        case 'PA.B12c':
+          this.startPAB12c(anno);
+          break;
+        case 'PA.B13':
+          this.startPAB13(anno);
+          break;
+        case 'PA.B13a':
+          this.startPAB13a(anno);
+          break;
+        case 'PA.B13b':
+          this.startPAB13b(anno);
+          break;
+        case 'PA.B13c':
+          this.startPAB13c(anno);
+          break;
+        case 'PA.B14':
+          this.startPAB14(anno);
+          break;
+        case 'PA.B14a':
+          this.startPAB14a(anno);
+          break;
+        case 'PA.B14b':
+          this.startPAB14b(anno);
+          break;
+        case 'PA.B14c':
+          this.startPAB14c(anno);
+          break;
+        case 'PA.B18':
+          this.startPAB18(anno);
+          break;
+        case 'PA.B15':
+          this.startPAB15(anno);
+          break;
+        case 'PA.B15a':
+          this.startPAB15a(anno);
+          break;
+        case 'PA.B15b':
+          this.startPAB15b(anno);
+          break;
+        case 'PA.B15c':
+          this.startPAB15c(anno);
+          break;
+        case 'PA.B16':
+          this.startPAB16(anno);
+          break;
+        case 'PA.B17':
+          this.startPAB17(anno);
+          break;
+        case 'PA.B17a':
+          this.startPAB17a(anno);
+          break;
+        case 'PA.B17b':
+          this.startPAB17b(anno);
+          break;
+        case 'PA.B17c':
+          this.startPAB17c(anno);
+          break;
+        case 'PA.B2':
+          this.startPAB2(anno);
+          break;
+        case 'PA.B21':
+          this.startPAB21(anno);
+          break;
+        case 'PA.B21a':
+          this.startPAB21A(anno);
+          break;
+        case 'PA.B21b':
+          this.startPAB21B(anno);
+          break;
+        case 'PA.B21c':
+          this.startPAB21C(anno);
+          break;
+        case 'PA.B22':
+          this.startPAB22(anno);
+          break;
+        case 'PA.B22a':
+          this.startPAB22A(anno);
+          break;
+        case 'PA.B22b':
+          this.startPAB22B(anno);
+          break;
+        case 'PA.B22c':
+          this.startPAB22C(anno);
+          break;
+        case 'PA.B23':
+          this.startPAB23(anno);
+          break;
+        case 'PA.B23a':
+          this.startPAB23A(anno);
+          break;
+        case 'PA.B23b':
+          this.startPAB23B(anno);
+          break;
+        case 'PA.B23c':
+          this.startPAB23C(anno);
+          break;
+        case 'PA.B24':
+          this.startPAB24(anno);
+          break;
+        case 'PA.B24a':
+          this.startPAB24A(anno);
+          break;
+        case 'PA.B24b':
+          this.startPAB24B(anno);
+          break;
+        case 'PA.B24c':
+          this.startPAB24C(anno);
+          break;
+        case 'PA.B25':
+          this.startPAB25(anno);
+          break;
+        case 'PA.B26':
+          this.startPAB26(anno);
+          break;
+        case 'PA.B26a':
+          this.startPAB26A(anno);
+          break;
+        case 'PA.B26b':
+          this.startPAB26B(anno);
+          break;
+        case 'PA.B26c':
+          this.startPAB26C(anno);
+          break;
+        case 'PA.B3':
+          this.startPAB3(anno);
+          break;
+        case 'PA.B31':
+          this.startPAB31(anno);
+          break;
+        case 'PA.B31a':
+          this.startPAB31A(anno);
+          break;
+        case 'PA.B31b':
+          this.startPAB31B(anno);
+          break;
+        case 'PA.B31c':
+          this.startPAB31C(anno);
+          break;
+        case 'PA.B31d':
+          this.startPAB31D(anno);
+          break;
+        case 'PA.B32':
+          this.startPAB32(anno);
+          break;
+        case 'PA.B32a':
+          this.startPAB32A(anno);
+          break;
+        case 'PA.B32a1':
+          this.startPAB32A1(anno);
+          break;
+        case 'PA.B32a2':
+          this.startPAB32A2(anno);
+          break;
+        case 'PA.B32b':
+          this.startPAB32B(anno);
+          break;
+        case 'PA.B32b1':
+          this.startPAB32B1(anno);
+          break;
+        case 'PA.B32b2':
+          this.startPAB32B2(anno);
+          break;
+        case 'PA.B32c':
+          this.startPAB32C(anno);
+          break;
+        case 'PA.B32c1':
+          this.startPAB32C1(anno);
+          break;
+        case 'PA.B32c2':
+          this.startPAB32C2(anno);
+          break;
+        case 'PA.B32d':
+          this.startPAB32D(anno);
+          break;
+        case 'PA.B32d1':
+          this.startPAB32D1(anno);
+          break;
+        case 'PA.B32d2':
+          this.startPAB32D2(anno);
+          break;
+        case 'PA.B33':
+          this.startPAB33(anno);
+          break;
+        case 'PA.B34':
+          this.startPAB34(anno);
+          break;
+        case 'PA.B34a':
+          this.startPAB34A(anno);
+          break;
+        case 'PA.B34b':
+          this.startPAB34B(anno);
+          break;
+        case 'PA.C':
+          this.startPAC(anno);
+          break;
+        case 'PA.C1':
+          this.startPAC1(anno);
+          break;
+        case 'PA.C11':
+          this.startPAC11(anno);
+          break;
+        case 'PA.C12':
+          this.startPAC12(anno);
+          break;
+        case 'PA.C13':
+          this.startPAC13(anno);
+          break;
+        case 'PA.C14':
+          this.startPAC14(anno);
+          break;
+        case 'PA.C15':
+          this.startPAC15(anno);
+          break;
+        case 'PA.C2':
+          this.startPAC2(anno);
+          break;
+        case 'PA.C21':
+          this.startPAC21(anno);
+          break;
+        case 'PA.C21a':
+          this.startPAC21A(anno);
+          break;
+        case 'PA.C21b':
+          this.startPAC21B(anno);
+          break;
+        case 'PA.C22':
+          this.startPAC22(anno);
+          break;
+        case 'PA.C22a':
+          this.startPAC22A(anno);
+          break;
+        case 'PA.C22b':
+          this.startPAC22B(anno);
+          break;
+        case 'PA.C23':
+          this.startPAC23(anno);
+          break;
+        case 'PA.C23a':
+          this.startPAC23A(anno);
+          break;
+        case 'PA.C23b':
+          this.startPAC23B(anno);
+          break;
+        case 'PA.C24':
+          this.startPAC24(anno);
+          break;
+        case 'PA.C24a':
+          this.startPAC24A(anno);
+          break;
+        case 'PA.C24b':
+          this.startPAC24B(anno);
+          break;
+        case 'PA.C2B':
+          this.startPAC2B(anno);
+          break;
+        case 'PA.C2Ba':
+          this.startPAC2BA(anno);
+          break;
+        case 'PA.C2Bb':
+          this.startPAC2BB(anno);
+          break;
+        case 'PA.C2T':
+          this.startPACTB(anno);
+          break;
+        case 'PA.C2Ta':
+          this.startPAC2TA(anno);
+          break;
+        case 'PA.C2Tb':
+          this.startPAC2TB(anno);
+          break;
+        case 'PA.C25':
+          this.startPAC25(anno);
+          break;
+        case 'PA.C25a':
+          this.startPAC25A(anno);
+          break;
+        case 'PA.C25b':
+          this.startPAC25B(anno);
+          break;
+        case 'PA.C3':
+          this.startPAC3(anno);
+          break;
+        case 'PA.C31':
+          this.startPAC31(anno);
+          break;
+        case 'PA.C32':
+          this.startPAC32(anno);
+          break;
+        case 'PA.C33':
+          this.startPAC33(anno);
+          break;
+        case 'PA.C34':
+          this.startPAC34(anno);
+          break;
+        case 'PA.C35':
+          this.startPAC35(anno);
+          break;
+        case 'PA.C35a':
+          this.startPAC35A(anno);
+          break;
+        case 'PA.C35b':
+          this.startPAC35B(anno);
+          break;
+        case 'PA.C36':
+          this.startPAC36(anno);
+          break;
+        case 'PA.C5':
+          this.startPAC4(anno);
+          break;
+        case 'PA.C41':
+          this.startPAC41(anno);
+          break;
+        case 'PA.C42':
+          this.startPAC42(anno);
+          break;
+        case 'PA.C43':
+          this.startPAC43(anno);
+          break;
+        case 'PA.D':
+          this.startPAD(anno);
+          break;
+        case 'PA.D1':
+          this.startPAD1(anno);
+          break;
+        case 'PA.D2':
+          this.startPAD2(anno);
+          break;
       }
     },
     startPA(anno){
@@ -462,15 +935,548 @@ export default {
     startPAA2(anno) {
       this.calculatePAA(anno);
     },
+    startPAB(anno) {
+      this.calculatePA(anno);
+    },
+    startPAB1(anno) {
+      this.calculatePAB(anno);
+    },
+    startPAB11(anno) {
+      this.calculatePAB1(anno);
+    },
+    startPAB11a(anno) {
+      this.calculatePAB11(anno);
+    },
+    startPAB11b(anno) {
+      this.calculatePAB11(anno);
+    },
+    startPAB11c(anno) {
+      this.calculatePAB11(anno);
+    },
+    startPAB12(anno) {
+      this.calculatePAB1(anno);
+    },
+    startPAB12a(anno) {
+      this.calculatePAB12(anno);
+    },
+    startPAB12b(anno) {
+      this.calculatePAB12(anno);
+    },
+    startPAB12c(anno) {
+      this.calculatePAB12(anno);
+    },
+    startPAB13(anno) {
+      this.calculatePAB1(anno);
+    },
+    startPAB13a(anno) {
+      this.calculatePAB13(anno);
+    },
+    startPAB13b(anno) {
+      this.calculatePAB13(anno);
+    },
+    startPAB13c(anno) {
+      this.calculatePAB13(anno);
+    },
+    startPAB14(anno) {
+      this.calculatePAB1(anno);
+    },
+    startPAB14a(anno) {
+      this.calculatePAB14(anno);
+    },
+    startPAB14b(anno) {
+      this.calculatePAB14(anno);
+    },
+    startPAB14c(anno) {
+      this.calculatePAB14(anno);
+    },
+    startPAB18(anno) {
+    },
+    startPAB15(anno) {
+      this.calculatePAB1(anno);
+    },
+    startPAB15a(anno) {
+      this.calculatePAB15(anno);
+    },
+    startPAB15b(anno) {
+      this.calculatePAB15(anno);
+    },
+    startPAB15c(anno) {
+      this.calculatePAB15(anno);
+    },
+    startPAB16(anno) {
+      this.calculatePAB1(anno);
+    },
+    startPAB17(anno) {
+      this.calculatePAB1(anno);
+    },
+    startPAB17a(anno) {
+      this.calculatePAB17(anno);
+    },
+    startPAB17b(anno) {
+      this.calculatePAB17(anno);
+    },
+    startPAB17c(anno) {
+      this.calculatePAB17(anno);
+    },
+    startPAB2(anno){
+      this.calculatePAB(anno);
+    },
+    startPAB21(anno){
+      this.calculatePAB2(anno);
+    },
+    startPAB21A(anno){
+      this.calculatePAB21(anno);
+    },
+    startPAB21B(anno){
+      this.calculatePAB21(anno);
+    },
+    startPAB21C(anno){
+      this.calculatePAB21(anno);
+    },
+    startPAB22(anno){
+      this.calculatePAB2(anno);
+    },
+    startPAB22A(anno) {
+      this.calculatePAB22(anno);
+    },
+    startPAB22B(anno) {
+      this.calculatePAB22(anno);
+    },
+    startPAB22C(anno) {
+      this.calculatePAB22(anno);
+    },
+    startPAB23(anno) {
+      this.calculatePAB2(anno);
+    },
+    startPAB23A(anno) {
+      this.calculatePAB23(anno);
+    },
+    startPAB23B(anno) {
+      this.calculatePAB23(anno);
+    },
+    startPAB23C(anno) {
+      this.calculatePAB23(anno);
+    },
+    startPAB24(anno) {
+      this.calculatePAB2(anno);
+    },
+    startPAB24A(anno) {
+      this.calculatePAB24(anno);
+    },
+    startPAB24B(anno) {
+      this.calculatePAB24(anno);
+    },
+    startPAB24C(anno) {
+      this.calculatePAB24(anno);
+    },
+    startPAB25(anno) {
+      this.calculatePAB2(anno);
+    },
+    startPAB26(anno) {
+      this.calculatePAB2(anno);
+    },
+    startPAB26A(anno) {
+      this.calculatePAB26(anno);
+    },
+    startPAB26B(anno) {
+      this.calculatePAB26(anno);
+    },
+    startPAB26C(anno) {
+      this.calculatePAB26(anno);
+    },
+    startPAB3(anno) {
+      this.calculatePAB(anno);
+    },
+    startPAB31(anno) {
+      this.calculatePAB3(anno);
+    },
+    startPAB31A(anno) {
+      this.calculatePAB31(anno);
+    },
+    startPAB31B(anno) {
+      this.calculatePAB31(anno);
+    },
+    startPAB31C(anno) {
+      this.calculatePAB31(anno);
+    },
+    startPAB31D(anno) {
+      this.calculatePAB31(anno);
+    },
+    startPAB32(anno) {
+      this.calculatePAB3(anno);
+    },
+    startPAB32A(anno) {
+      this.calculatePAB32(anno);
+    },
+    startPAB32A1(anno) {
+      this.calculatePAB32A(anno);
+    },
+    startPAB32A2(anno) {
+      this.calculatePAB32A(anno);
+    },
+    startPAB32B(anno) {
+      this.calculatePAB32(anno);
+    },
+    startPAB32B1(anno) {
+      this.calculatePAB32B(anno);
+    },
+    startPAB32B2(anno) {
+      this.calculatePAB32B(anno);
+    },
+    startPAB32C(anno) {
+      this.calculatePAB32(anno);
+    },
+    startPAB32C1(anno){
+      this.calculatePAB32C(anno);
+    },
+    startPAB32C2(anno){
+      this.calculatePAB32C(anno);
+    },
+    startPAB32D(anno){
+      this.calculatePAB32(anno);
+    },
+    startPAB32D1(anno){
+      this.calculatePAB32D(anno);
+    },
+    startPAB32D2(anno){
+      this.calculatePAB32D(anno);
+    },
+    startPAB33(anno){
+      this.calculatePAB3(anno);
+    },
+    startPAB34(anno){
+      this.calculatePAB3(anno);
+    },
+    startPAB34A(anno){
+      this.calculatePA34(anno);
+    },
+    startPAB34B(anno){
+      this.calculatePAB34(anno);
+    },
+    startPAC(anno){
+      this.calculatePA(anno);
+    },
+    startPAC1(anno){
+      this.calculatePAC(anno);
+    },
+    startPAC11(anno){
+      this.calculatePAC1(anno);
+    },
+    startPAC12(anno){
+      this.calculatePAC1(anno);
+    },
+    startPAC13(anno){
+      this.calculatePAC1(anno);
+    },
+    startPAC14(anno){
+      this.calculatePAC1(anno);
+    },
+    startPAC15(anno){
+      this.calculatePAC1(anno);
+    },
+    startPAC2(anno){
+      this.calculatePAC(anno);
+    },
+    startPAC21(anno){
+      this.calculatePAC2(anno);
+    },
+    startPAC21A(anno){
+      this.calculatePAC21(anno);
+    },
+    startPAC21B(anno){
+      this.calculatePAC21(anno);
+    },
+    startPAC22(anno){
+      this.calculatePAC2(anno);
+    },
+    startPAC22A(anno){
+      this.calculatePAC22(anno);
+    },
+    startPAC22B(anno){
+      this.calculatePAC22(anno);
+    },
+    startPAC23(anno){
+      this.calculatePAC2(anno);
+    },
+    startPAC23A(anno){
+      this.calculatePAC23(anno);
+    },
+    startPAC23B(anno){
+      this.calculatePAC23(anno);
+    },
+    startPAC24(anno){
+      this.calculatePAC2(anno);
+    },
+    startPAC24A(anno){
+      this.calculatePAC24(anno);
+    },
+    startPAC24B(anno){
+      this.calculatePAC24(anno);
+    },
+    startPAC2B(anno){
+      this.calculatePAC2(anno);
+    },
+    startPAC2BA(anno){
+      this.calculatePAC2B(anno);
+    },
+    startPAC2BB(anno){
+      this.calculatePAC2B(anno);
+    },
+    startPAC2T(anno){
+      this.calculatePAC2(anno);
+    },
+    startPAC2TA(anno){
+      this.calculatePAC2T(anno);
+    },
+    startPAC2TB(anno){
+      this.calculatePAC2T(anno);
+    },
+    startPAC25(anno){
+      this.calculatePAC2(anno);
+    },
+    startPAC25A(anno){
+      this.calculatePAC25(anno);
+    },
+    startPAC25B(anno){
+      this.calculatePAC25(anno);
+    },
+    startPAC3(anno){
+      this.startPAC3(anno);
+    },
+    startPAC31(anno){
+      this.calculatePAC3(anno);
+    },
+    startPAC32(anno){
+      this.calculatePAC3(anno);
+    },
+    startPAC33(anno){
+      this.calculatePAC3(anno);
+    },
+    startPAC34(anno){
+      this.calculatePAC3(anno);
+    },
+    startPAC35(anno){
+      this.calculatePAC3(anno);
+    },
+    startPAC35A(anno){
+      this.calculatePAC35(anno);
+    },
+    startPAC35B(anno){
+      this.calculatePAC35(anno);
+    },
+    startPAC36(anno){
+      this.calculatePAC3(anno);
+    },
+    startPAC4(anno){
+      this.calculatePAC(anno);
+    },
+    startPAC41(anno){
+      this.calculatePAC4(anno);
+    },
+    startPAC42(anno){
+      this.calculatePAC4(anno);
+    },
+    startPAC43(anno){
+      this.calculatePAC4(anno);
+    },
+    startPAD(anno){
+      this.calculatePA(anno)
+    },
+    startPAD1(anno){
+      this.calculatePAD(anno);
+    },
+    startPAD2(anno){
+      this.calculatePAD2(anno);
+    },
     calculatePA(anno) {
       let index_anno = 2019 - parseInt(anno);
-      this.row[this.PA].values[index_anno].value = this.row[this.PAA].values[index_anno].value;
+      this.row[this.PA].values[index_anno].value = this.row[this.PAA].values[index_anno].value+this.row[this.PAB].values[index_anno].value+this.row[this.PAC].values[index_anno].value+this.row[this.PAD].values[index_anno].value;
     },
     calculatePAA(anno) {
       let index_anno = 2019 - parseInt(anno);
       this.row[this.PAA].values[index_anno].value = this.row[this.PAA1].values[index_anno].value + this.row[this.PAA2].values[index_anno].value;
       this.startPAA(anno);
     },
+    calculatePAB(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB].values[index_anno].value = this.row[this.PAB1].values[index_anno].value + this.row[this.PAB2].values[index_anno].value + this.row[this.PAB3].values[index_anno].value;
+      this.startPAB(anno);
+    },
+    calculatePAB1(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB1].values[index_anno].value = this.row[this.PAB11].values[index_anno].value + this.row[this.PAB12].values[index_anno].value + this.row[this.PAB13].values[index_anno].value + this.row[this.PAB14].values[index_anno].value + this.row[this.PAB15].values[index_anno].value + this.row[this.PAB16].values[index_anno].value + this.row[this.PAB17].values[index_anno].value;
+      this.startPAB1(anno);
+    },
+    calculatePAB11(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB11].values[index_anno].value = this.row[this.PAB11A].values[index_anno].value - this.row[this.PAB11B].values[index_anno].value - this.row[this.PAB11C].values[index_anno].value;
+      this.startPAB11(anno);
+    },
+    calculatePAB12(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB12].values[index_anno].value = this.row[this.PAB12A].values[index_anno].value - this.row[this.PAB12B].values[index_anno].value - this.row[this.PAB12C].values[index_anno].value;
+      this.startPAB12(anno);
+    },
+    calculatePAB13(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB13].values[index_anno].value = this.row[this.PAB13A].values[index_anno].value - this.row[this.PAB13B].values[index_anno].value - this.row[this.PAB13C].values[index_anno].value;
+      this.startPAB13(anno);
+    },
+    calculatePAB14(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB14].values[index_anno].value = this.row[this.PAB14A].values[index_anno].value - this.row[this.PAB14B].values[index_anno].value - this.row[this.PAB14C].values[index_anno].value;
+      this.startPAB14(anno);
+    },
+    calculatePAB15(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB15].values[index_anno].value = this.row[this.PAB15A].values[index_anno].value - this.row[this.PAB15B].values[index_anno].value - this.row[this.PAB15C].values[index_anno].value;
+      this.startPAB15(anno);
+    },
+    calculatePAB17(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB17].values[index_anno].value = this.row[this.PAB17A].values[index_anno].value - this.row[this.PAB17B].values[index_anno].value - this.row[this.PAB17C].values[index_anno].value;
+      this.startPAB17(anno);
+    },
+    calculatePAB2(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAB2].values[index_anno].value=this.row[this.PAB21].values[index_anno].value+this.row[this.PAB22].values[index_anno].value+this.row[this.PAB23].values[index_anno].value+this.row[this.PAB24].values[index_anno].value+this.row[this.PAB25].values[index_anno].value+this.row[this.PAB26].values[index_anno].value;
+      this.startPAB2(anno);
+    },
+    calculatePAB21(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAB21].values[index_anno].value=this.row[this.PAB21A].values[index_anno].value+this.row[this.PAB21B].values[index_anno].value+this.row[this.PAB21C].values[index_anno].value;
+      this.startPAB21(anno);
+    },
+    calculatePAB22(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAB22].values[index_anno].value=this.row[this.PAB22A].values[index_anno].value+this.row[this.PAB22B].values[index_anno].value+this.row[this.PAB22C].values[index_anno].value;
+      this.startPAB22(anno);
+    },
+    calculatePAB23(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB23].values[index_anno].value = this.row[this.PAB23A].values[index_anno].value - this.row[this.PAB23B].values[index_anno].value - this.row[this.PAB23C].values[index_anno].value;
+      this.startPAB23(anno); 
+    },
+    calculatePAB24(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB24].values[index_anno].value = this.row[this.PAB24A].values[index_anno].value - this.row[this.PAB24B].values[index_anno].value - this.row[this.PAB24C].values[index_anno].value;
+      this.startPAB24(anno); 
+    },
+    calculatePAB26(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB26].values[index_anno].value = this.row[this.PAB26A].values[index_anno].value - this.row[this.PAB26B].values[index_anno].value - this.row[this.PAB26C].values[index_anno].value;
+      this.startPAB26(anno); 
+    },
+    calculatePAB3(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB3].values[index_anno].value = this.row[this.PAB31].values[index_anno].value + this.row[this.PAB32].values[index_anno].value + this.row[this.PAB33].values[index_anno].value + this.row[this.PAB34].values[index_anno].value;
+      this.startPAB3(anno);
+    },
+    calculatePAB31(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB31].values[index_anno].value = this.row[this.PAB31A].values[index_anno].value + this.row[this.PAB31B].values[index_anno].value + this.row[this.PAB31C].values[index_anno].value + this.row[this.PAB31D].values[index_anno].value;
+      this.startPAB31(anno);
+    },
+    calculatePAB32(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB32].values[index_anno].value = this.row[this.PAB32A].values[index_anno].value + this.row[this.PAB32B].values[index_anno].value + this.row[this.PAB32C].values[index_anno].value + this.row[this.PAB32D].values[index_anno].value;
+      this.startPAB32(anno);
+    },
+    calculatePAB32A(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB32A].values[index_anno].value = this.row[this.PAB32A1].values[index_anno].value + this.row[this.PAB32A2].values[index_anno].value;
+      this.startPAB32A(anno);
+    },
+    calculatePAB32B(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB32B].values[index_anno].value = this.row[this.PAB32B1].values[index_anno].value + this.row[this.PAB32B2].values[index_anno].value;
+      this.startPAB32B(anno);
+    },
+    calculatePAB32C(anno) {
+      let index_anno = 2019 - parseInt(anno);
+      this.row[this.PAB32C].values[index_anno].value = this.row[this.PAB32C1].values[index_anno].value + this.row[this.PAB32C2].values[index_anno].value;
+      this.startPAB32C(anno);
+    },
+    calculatePAB32D(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAB32D].values[index_anno].value=this.row[this.PAB32D1].values[index_anno].value+this.row[this.PAB32D2].values[index_anno].value;
+      this.startPAB32D(anno);
+    },
+    calculatePAB34(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAB34].values[index_anno].value=this.row[this.PAB34A].values[index_anno].value+this.row[this.PAB34B].values[index_anno].value;
+      this.startPAB34(anno);
+    },
+    calculatePAC(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAC].values[index_anno].value=this.row[this.PAC1].values[index_anno].value+this.row[this.PAC2].values[index_anno].value+this.row[this.PAC3].values[index_anno].value+this.row[this.PAC4].values[index_anno].value;
+      this.startPAC(anno);
+    },
+    calculatePAC1(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAC1].values[index_anno].value=this.row[this.PAC11].values[index_anno].value+this.row[this.PAC12].values[index_anno].value+this.row[this.PAC13].values[index_anno].value+this.row[this.PAC14].values[index_anno].value+this.row[this.PAC15].values[index_anno].value;
+      this.startPAC1(anno);
+    },
+    calculatePAC2(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAC2].values[index_anno].value=this.row[this.PAC21].values[index_anno].value+this.row[this.PAC22].values[index_anno].value+this.row[this.PAC23].values[index_anno].value+this.row[this.PAC24].values[index_anno].value+this.row[this.PAC2B].values[index_anno].value+this.row[this.PAC2T].values[index_anno].value+this.row[this.PAC25].values[index_anno].value;
+      this.startPAC2(anno);
+    },
+    calculatePAC21(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAC21].values[index_anno].value=this.row[this.PAC21A].values[index_anno].value+this.row[this.PAC21B].values[index_anno].value;
+      this.startPAC21(anno);
+    },
+    calculatePAC22(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAC22].values[index_anno].value=this.row[this.PAC22A].values[index_anno].value+this.row[this.PAC22B].values[index_anno].value;
+      this.startPAC22(anno);
+    },
+    calculatePAC23(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAC23].values[index_anno].value=this.row[this.PAC23A].values[index_anno].value+this.row[this.PAC23B].values[index_anno].value;
+      this.startPAC23(anno);
+    },
+    calculatePAC24(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAC24].values[index_anno].value=this.row[this.PAC24A].values[index_anno].value+this.row[this.PAC24B].values[index_anno].value;
+      this.startPAC24(anno);
+    },
+    calculatePAC2B(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAC2B].values[index_anno].value=this.row[this.PAC2BA].values[index_anno].value+this.row[this.PAC2BB].values[index_anno].value;
+      this.startPAC2B(anno);
+    },
+    calculatePAC2T(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAC2T].values[index_anno].value=this.row[this.PAC2TA].values[index_anno].value+this.row[this.PAC2TB].values[index_anno].value;
+      this.startPAC2T(anno);
+    },
+    calculatePAC25(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAC25].values[index_anno].value=this.row[this.PAC25A].values[index_anno].value+this.row[this.PAC25B].values[index_anno].value;
+      this.startPAC25(anno);
+    },
+    calculatePAC3(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAC3].values[index_anno].value=this.row[this.PAC31].values[index_anno].value+this.row[this.PAC32].values[index_anno].value+this.row[this.PAC33].values[index_anno].value+this.row[this.PAC34].values[index_anno].value+this.row[this.PAC35].values[index_anno].value+this.row[this.PAC36].values[index_anno].value;
+      this.startPAC3(anno);
+    },
+    calculatePAC35(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAC35].values[index_anno].value=this.row[this.PAC35A].values[index_anno].value+this.row[this.PAC35B].values[index_anno].value;
+      this.startPAC35(anno);
+    },
+    calculatePAC4(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAC4].values[index_anno].value=this.row[this.PAC41].values[index_anno].value+this.row[this.PAC42].values[index_anno].value+this.row[this.PAC43].values[index_anno].value;
+      this.startPAC4(anno);
+    },
+    calculatePAD(anno){
+      let index_anno=2019-parseInt(anno);
+      this.row[this.PAD].values[index_anno].value=this.row[this.PAD1].values[index_anno].value+this.row[this.PAD2].values[index_anno].value;
+      this.startPAD(anno);
+    }
   } 
 }
 </script>
